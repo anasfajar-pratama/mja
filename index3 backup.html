@@ -1,0 +1,1412 @@
+<!doctype html>
+<html lang="id"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Company Profile PT. Magali Jaya Abadi — solusi facility care, outsourcing, cleaning service, security, dan layanan penunjang bisnis."><meta name="theme-color" content="#071527">
+<link rel="icon" type="image/png" sizes="128x128" href="assets/favicon.png"><link rel="icon" type="image/webp" sizes="128x128" href="assets/img60.webp"><link rel="apple-touch-icon" href="assets/favicon.png">
+<title>PT. Magali Jaya Abadi — Facility Care &amp; Outsourcing Solusi Bisnis</title>
+<style>
+:root{
+  --navy:#0b1d38;
+  --navy-deep:#05101f;
+  --navy3:#071527;
+  --navy2:#16345f;
+  --blue-sky:#2b86d9;
+  --blue-bright:#38bdf8;
+  --blue-soft:rgba(43,134,217,.12);
+  --blue-glow:rgba(56,189,248,.3);
+  --red:#c52639;
+  --red-hover:#a71b2c;
+  --red2:#e03246;
+  --red-soft:rgba(197,38,57,.09);
+  --red-glow:rgba(224,50,70,.28);
+  --ink:#17243a;
+  --muted:#5f7087;
+  --muted-light:#9db0c6;
+  --line:#e3e9f2;
+  --line-soft:#edf2f7;
+  --line-dark:rgba(255,255,255,.1);
+  --soft:#f8fafd;
+  --pearl:#f4f7fb;
+  --card-dark:#0e2342;
+  --content:1180px;
+  --header-h:76px;
+  --radius-xl:20px;
+  --radius-lg:16px;
+  --radius-md:12px;
+  --radius-sm:8px;
+  --shadow-sm:0 4px 14px rgba(11,29,56,.05);
+  --shadow-md:0 12px 30px rgba(11,29,56,.09);
+  --shadow-lg:0 22px 50px rgba(7,21,39,.18);
+  --shadow-dark:0 22px 55px rgba(2,8,18,.5);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header-h) + 16px)}
+section[id],[id]{scroll-margin-top:calc(var(--header-h) + 16px)}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);line-height:1.7;-webkit-font-smoothing:antialiased;background:#fff;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+p{text-align:justify;text-justify:inter-word;text-align-last:start;hyphens:auto;margin:0 0 16px}
+.container{width:min(var(--content),calc(100% - 44px));margin:auto}
+.ic{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:0 0 auto}
+
+/* Typography & Eyebrow Badges */
+.eyebrow{display:inline-flex;align-items:center;gap:8px;text-transform:uppercase;letter-spacing:.18em;font-size:11.5px;font-weight:900;color:var(--red);margin-bottom:8px}
+.eyebrow.on-dark{color:#ff909d}
+.eyebrow::before{content:"";display:inline-block;width:18px;height:2px;background:currentColor;border-radius:2px}
+h1,h2,h3,h4{color:var(--navy);font-weight:900;letter-spacing:-.025em;line-height:1.15;margin:0 0 14px}
+h1{font-size:clamp(34px,4.8vw,58px);line-height:1.06;letter-spacing:-.035em}
+h2{font-size:clamp(26px,3.4vw,40px);margin:6px 0 14px}
+h2 .hl,h1 .hl{color:var(--red2)}
+.hl-blue{color:var(--blue-bright);text-shadow:0 0 25px rgba(56,189,248,.35)}
+.lead{color:var(--muted);font-size:16px;line-height:1.68;margin:0}
+.lead.on-dark{color:#c2d2e6}
+
+/* Sections & Atmospheric Backgrounds */
+.section{padding:clamp(60px,7vw,92px) 0;position:relative}
+.sec-head{max-width:760px;margin-bottom:44px}
+.sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+.sec-head.center p{text-align:center;text-align-last:center}
+
+/* Hero Section with Vibrant Navy, Cyan & Red Accents */
+.hero{background:radial-gradient(circle at 85% 10%,rgba(43,134,217,.38) 0%,rgba(14,46,90,.7) 25%,transparent 55%),radial-gradient(circle at 10% 90%,rgba(197,38,57,.22) 0%,transparent 45%),radial-gradient(ellipse at 50% 0%,#183d6f 0%,#0b1d38 55%,#05101f 100%);color:#fff;position:relative;overflow:hidden;padding:clamp(56px,7vw,86px) 0 clamp(48px,6vw,70px);border-bottom:1px solid rgba(255,255,255,.08)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(32px,4.5vw,60px);align-items:center;position:relative;z-index:2}
+.hero h1{color:#ffffff;margin:14px 0 18px}
+.hero .lead{color:#cbd8ea;font-size:16.5px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-top:28px}
+.hero-stats{display:flex;gap:36px;margin-top:36px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.12);padding-top:24px}
+.hstat b{font-size:32px;display:block;line-height:1.1;color:#fff;font-weight:900}
+.hstat span{color:#9cb2cc;font-size:12.5px;font-weight:600;display:block;margin-top:2px}
+
+/* Dark Theme Sections with Combined Light Blue & Red Atmosphere */
+.dark-sec{background:radial-gradient(circle at 90% 15%,rgba(43,134,217,.25) 0%,transparent 45%),radial-gradient(circle at 12% 85%,rgba(197,38,57,.18) 0%,transparent 45%),radial-gradient(ellipse at 50% 0%,#153664 0%,#0b1d38 55%,#05101f 100%);color:#fff;border-top:1px solid rgba(255,255,255,.07);border-bottom:1px solid rgba(255,255,255,.07)}
+.dark-sec h2,.dark-sec h3{color:#fff}
+.dark-sec-alt{background:radial-gradient(circle at 10% 20%,rgba(43,134,217,.18) 0%,transparent 40%),radial-gradient(circle at 85% 80%,rgba(197,38,57,.15) 0%,transparent 40%),linear-gradient(180deg,#061324 0%,#091b34 50%,#05101f 100%);color:#fff;border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06)}
+.dark-sec-alt h2,.dark-sec-alt h3{color:#fff}
+
+/* Light Theme Sections with Visual Depth & Ambient Hues */
+.light-pearl{background:radial-gradient(circle at 90% 10%,rgba(43,134,217,.06) 0%,transparent 50%),radial-gradient(circle at 10% 90%,rgba(197,38,57,.04) 0%,transparent 50%),linear-gradient(180deg,#ffffff 0%,#f5f8fc 50%,#edf3f9 100%);border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft)}
+.light-pure{background:radial-gradient(circle at 80% 0%,rgba(43,134,217,.05) 0%,transparent 45%),#ffffff}
+.customer-section{background:radial-gradient(circle at 50% 0%,rgba(56,189,248,.08) 0%,transparent 55%),radial-gradient(circle at 85% 100%,rgba(197,38,57,.05) 0%,transparent 40%),linear-gradient(180deg,#ffffff 0%,#f4f8fd 50%,#ffffff 100%);border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft)}
+
+/* Buttons & Badges */
+.btn{display:inline-flex;align-items:center;gap:10px;justify-content:center;padding:13px 26px;border-radius:12px;background:var(--red);color:#fff;font-weight:800;font-size:14.5px;border:0;cursor:pointer;box-shadow:0 12px 28px rgba(197,38,57,.32);transition:transform .2s ease,background .2s ease,box-shadow .2s ease}
+.btn:hover{background:var(--red-hover);transform:translateY(-2px);box-shadow:0 16px 32px rgba(197,38,57,.4)}
+.btn.ghost{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.3);box-shadow:none}
+.btn.ghost:hover{background:rgba(255,255,255,.18);border-color:#fff}
+.phone{display:inline-flex;align-items:center;gap:10px;padding:9px 18px;border-radius:12px;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.06);color:#fff;font-weight:700;font-size:14px;backdrop-filter:blur(6px);transition:all .2s ease}
+.phone:hover{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.4);transform:translateY(-1px)}
+.phone .ic{width:28px;height:28px;padding:5px;background:var(--red);border-radius:50%;color:#fff}
+
+/* Header & Sticky Nav */
+.site-header{position:sticky;top:0;z-index:90;background:rgba(7,21,39,.94);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08);transition:all .2s ease}
+.nav{height:var(--header-h);display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:900;color:#fff;line-height:1.2}
+.brand img{width:46px;height:42px;object-fit:contain;background:#fff;border-radius:9px;padding:3px;box-shadow:0 4px 12px rgba(0,0,0,.25)}
+.brand span{font-size:15px;letter-spacing:-.01em}
+.brand small{display:block;color:#8fa7c3;font-size:9.5px;letter-spacing:.12em;font-weight:800;margin-top:2px}
+.navlinks{display:flex;align-items:center;gap:clamp(12px,1.6vw,22px);font-size:13.5px;font-weight:700;color:#d8e4f3}
+.navlinks a:not(.navcta){padding:8px 6px;position:relative;transition:color .2s ease}
+.navlinks a:not(.navcta):hover{color:#fff}
+.navlinks a:not(.navcta)::after{content:"";position:absolute;bottom:0;left:6px;right:6px;height:2px;background:var(--red);border-radius:2px;transform:scaleX(0);transition:transform .2s ease}
+.navlinks a:not(.navcta):hover::after{transform:scaleX(1)}
+.navcta{padding:10px 18px;border-radius:10px;background:var(--red);color:#fff;font-weight:800;flex:0 0 auto;white-space:nowrap;box-shadow:0 6px 18px rgba(197,38,57,.35);transition:all .2s ease}
+.navcta:hover{background:var(--red-hover);transform:translateY(-1px)}
+.menu{display:none;width:44px;height:44px;place-items:center;border-radius:10px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);font-size:22px;color:#fff;cursor:pointer}
+
+/* Hero Collage */
+.collage{position:relative}
+.collage .main{width:100%;aspect-ratio:4/3.3;object-fit:cover;border-radius:var(--radius-xl);box-shadow:var(--shadow-dark);border:1px solid rgba(255,255,255,.14)}
+.collage .mini{position:absolute;left:-16px;bottom:-18px;width:42%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius-lg);border:4px solid #071527;box-shadow:var(--shadow-dark)}
+.collage .play{position:absolute;right:16px;bottom:18px;display:flex;align-items:center;gap:12px;background:rgba(7,21,39,.88);border:1px solid rgba(56,189,248,.3);border-radius:14px;padding:11px 16px;backdrop-filter:blur(8px);box-shadow:0 12px 30px rgba(0,0,0,.4)}
+.collage .play .ic{width:36px;height:36px;padding:8px;background:var(--red);border-radius:50%;color:#fff}
+.collage .play b{display:block;font-size:13.5px;color:#fff}
+.collage .play span{font-size:11px;color:#a0b4cc}
+
+/* Floating Feature Strip */
+.feat-strip{position:relative;z-index:3;margin-top:-32px;margin-bottom:20px}
+.feat-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.feat{background:#ffffff;border:1px solid var(--line);border-radius:var(--radius-lg);padding:22px 20px;box-shadow:var(--shadow-md);display:flex;flex-direction:column;gap:8px;transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+.feat:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color:rgba(43,134,217,.45)}
+.feat .icon{width:46px;height:46px;border-radius:12px;background:linear-gradient(135deg,rgba(43,134,217,.15) 0%,rgba(197,38,57,.12) 100%);color:var(--navy);display:grid;place-items:center}
+.feat .icon .ic{width:24px;height:24px;color:var(--red)}
+.feat h3{font-size:16px;margin:4px 0 2px;color:var(--navy)}
+.feat p{margin:0;font-size:13px;color:var(--muted);line-height:1.55}
+
+/* About Section */
+.about-grid{display:grid;grid-template-columns:.94fr 1.06fr;gap:clamp(32px,4.5vw,56px);align-items:center}
+.about-collage{position:relative}
+.about-collage .main{width:100%;aspect-ratio:4/4.1;object-fit:cover;border-radius:var(--radius-xl);box-shadow:0 24px 50px rgba(11,29,56,.14);border:1px solid rgba(11,29,56,.06)}
+.about-collage .mini{position:absolute;right:-14px;top:28px;width:44%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius-lg);border:4px solid #fff;box-shadow:0 18px 40px rgba(11,29,56,.18)}
+.about-collage .exp{position:absolute;left:18px;bottom:-14px;background:linear-gradient(135deg,var(--red) 0%,#e03246 100%);color:#fff;border-radius:14px;padding:15px 22px;box-shadow:0 16px 36px rgba(197,38,57,.35)}
+.about-collage .exp b{font-size:30px;display:block;line-height:1;font-weight:900}
+.about-collage .exp span{font-size:12px;font-weight:700;letter-spacing:.03em}
+.vm-item{display:flex;gap:16px;margin-top:20px;background:#ffffff;border:1px solid var(--line);border-radius:var(--radius-md);padding:18px;box-shadow:var(--shadow-sm);transition:all .2s ease}
+.vm-item:hover{border-color:rgba(43,134,217,.35);box-shadow:var(--shadow-md);transform:translateY(-2px)}
+.vm-item .icon{width:46px;height:46px;border-radius:12px;background:var(--blue-soft);color:var(--blue-sky);display:grid;place-items:center;flex:0 0 auto}
+.vm-item h3{margin:0 0 4px;color:var(--navy);font-size:16.5px}
+.vm-item p{margin:0;color:var(--muted);font-size:13.5px;line-height:1.6}
+
+/* SERVICES SECTION — Clickable Cards with Interactive Modal */
+.svc-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.svc-card{background:linear-gradient(180deg,#0e264a 0%,#081a33 100%);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-dark);display:flex;flex-direction:column;cursor:pointer;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;position:relative}
+.svc-card:hover{transform:translateY(-5px);box-shadow:0 24px 55px rgba(2,8,18,.6),0 0 0 1px rgba(56,189,248,.35);border-color:rgba(56,189,248,.5)}
+.svc-media{position:relative;height:185px;overflow:hidden}
+.svc-media img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.svc-card:hover .svc-media img{transform:scale(1.08)}
+.svc-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,21,39,.1) 20%,rgba(9,27,52,.96) 100%)}
+.svc-tag{position:absolute;top:14px;left:14px;z-index:2;display:inline-flex;align-items:center;gap:6px;background:rgba(7,21,39,.88);border:1px solid rgba(255,255,255,.18);color:#fff;border-radius:999px;padding:5px 12px;font-size:11px;font-weight:800;letter-spacing:.04em;backdrop-filter:blur(6px)}
+.svc-tag .ic{width:14px;height:14px;color:var(--blue-bright)}
+.svc-click-hint{position:absolute;top:14px;right:14px;z-index:2;background:rgba(197,38,57,.88);color:#fff;border-radius:999px;padding:4px 10px;font-size:10.5px;font-weight:800;letter-spacing:.03em;display:flex;align-items:center;gap:4px;box-shadow:0 4px 12px rgba(197,38,57,.4);transition:opacity .2s ease}
+.svc-body{padding:22px;display:flex;flex-direction:column;flex:1}
+.svc-body h3{font-size:19px;color:#fff;margin:0 0 8px;display:flex;align-items:center;justify-content:space-between}
+.svc-body p{font-size:13.5px;color:#c2d3e8;margin:0 0 16px;line-height:1.6}
+.svc-chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:14px;border-top:1px solid rgba(255,255,255,.08)}
+.chip{display:inline-block;padding:4px 10px;border-radius:999px;font-size:11.5px;font-weight:600;background:rgba(255,255,255,.07);color:#d0deee;border:1px solid rgba(255,255,255,.1)}
+.chip-highlight{background:rgba(224,50,70,.18);color:#ff9aa5;border-color:rgba(224,50,70,.3)}
+.chip-blue{background:rgba(43,134,217,.2);color:#93c5fd;border-color:rgba(56,189,248,.3)}
+
+/* Featured BPO banner card */
+.svc-card.featured{grid-column:1/-1;display:grid;grid-template-columns:1.05fr .95fr;min-height:260px}
+.svc-card.featured .svc-media{height:100%}
+.svc-card.featured .svc-body{padding:28px 32px}
+.svc-card.featured h3{font-size:24px}
+.svc-card.featured p{font-size:14.5px}
+
+/* Strategic Framework: Vision, Mission & Values */
+.vm-grid-sec{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:48px}
+.vm-card{background:#ffffff;border:1px solid var(--line);border-radius:var(--radius-lg);padding:32px;box-shadow:var(--shadow-sm);border-left:5px solid var(--red);transition:all .3s cubic-bezier(.2,.8,.2,1);cursor:default;position:relative;overflow:hidden}
+.vm-card::after{content:"";position:absolute;top:0;right:0;width:120px;height:120px;background:radial-gradient(circle,rgba(43,134,217,.08) 0%,transparent 70%);border-radius:50%;pointer-events:none}
+.vm-card:hover{transform:translateY(-8px);box-shadow:0 22px 50px -10px rgba(11,29,56,.15),0 0 0 1px rgba(43,134,217,.25);border-left-color:var(--blue-sky);background:linear-gradient(180deg,#ffffff 0%,#f7faff 100%)}
+.vm-card h3{font-size:21px;color:var(--navy);display:flex;align-items:center;gap:12px;margin-bottom:14px;transition:color .25s ease}
+.vm-card h3 .ic{color:var(--red);width:26px;height:26px;transition:transform .3s ease,color .3s ease}
+.vm-card:hover h3{color:var(--navy2)}
+.vm-card:hover h3 .ic{color:var(--blue-sky);transform:scale(1.15) rotate(4deg)}
+.vm-card p{color:var(--muted);font-size:15px;line-height:1.7;margin:0}
+.vm-card ul{margin:0;padding-left:22px;color:var(--muted);font-size:14.5px;line-height:1.75}
+.vm-card li{margin-bottom:7px}
+
+/* ROYAL Values Box with Dual Accent Glow */
+.values-box{background:radial-gradient(circle at 85% 0%,rgba(43,134,217,.22) 0%,transparent 50%),radial-gradient(circle at 15% 100%,rgba(197,38,57,.2) 0%,transparent 50%),linear-gradient(135deg,#071527 0%,#0e2444 100%);border:1px solid rgba(255,255,255,.14);border-radius:var(--radius-xl);padding:clamp(28px,4vw,44px);color:#fff;box-shadow:var(--shadow-dark)}
+.values-head{text-align:center;max-width:680px;margin:0 auto 34px}
+.values-head h2{color:#fff}
+.values{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
+.value{border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);border-radius:var(--radius-md);padding:22px 18px;backdrop-filter:blur(4px);transition:all .2s ease}
+.value:hover{background:rgba(255,255,255,.09);border-color:rgba(56,189,248,.45);transform:translateY(-3px);box-shadow:0 12px 24px rgba(0,0,0,.3)}
+.value .letter{width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,var(--red) 0%,#e03246 100%);display:grid;place-items:center;font-weight:900;font-size:20px;margin-bottom:14px;color:#fff;box-shadow:0 6px 16px rgba(197,38,57,.4)}
+.value h3{font-size:16px;margin:0 0 6px;color:#fff}
+.value p{font-size:12.5px;color:#c0d2e7;margin:0;line-height:1.6}
+
+/* Legality Grid */
+.legal-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.legal{background:#ffffff;border:1px solid var(--line);border-left:4px solid var(--red);border-radius:0 var(--radius-md) var(--radius-md) 0;padding:20px;box-shadow:var(--shadow-sm);transition:all .2s ease}
+.legal:hover{transform:translateY(-2px);box-shadow:var(--shadow-md);border-left-color:var(--blue-sky)}
+.legal strong{display:block;color:var(--navy);font-size:14px;font-weight:800}
+.legal span{display:block;color:var(--muted);font-size:13.5px;margin-top:5px;line-height:1.5}
+
+/* CUSTOMER SECTION — Clean, Unified, Elegant & Proportional */
+.logos{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.logo-tile{height:112px;padding:16px 20px;border:1px solid var(--line);border-radius:var(--radius-lg);background:#ffffff;display:grid;place-items:center;box-shadow:var(--shadow-sm);transition:all .24s ease;position:relative}
+.logo-tile:hover{transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:rgba(43,134,217,.35)}
+.logo-tile img{width:auto;height:auto;max-width:82%;max-height:56px;object-fit:contain;transition:transform .2s ease}
+.logo-tile:hover img{transform:scale(1.06)}
+
+/* DOCUMENTATION SECTION — Category Tabs & Dynamic Carousel/Grid */
+.gallery-nav{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:28px}
+.gallery-tabs{display:flex;gap:8px;flex-wrap:wrap}
+.tab-btn{display:inline-flex;align-items:center;gap:8px;padding:9px 18px;border-radius:999px;font-size:13px;font-weight:800;border:1px solid var(--line);background:#ffffff;color:var(--muted);cursor:pointer;transition:all .2s ease}
+.tab-btn:hover{color:var(--navy);border-color:var(--blue-sky)}
+.tab-btn.active{background:var(--navy);color:#fff;border-color:var(--navy);box-shadow:0 4px 14px rgba(11,29,56,.25)}
+.tab-btn.active.tab-red{background:var(--red);border-color:var(--red);box-shadow:0 4px 14px rgba(197,38,57,.3)}
+.gallery-ctrls{display:flex;align-items:center;gap:10px}
+.slide-btn{width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:#ffffff;color:var(--navy);font-size:18px;font-weight:900;display:grid;place-items:center;cursor:pointer;box-shadow:var(--shadow-sm);transition:all .2s ease}
+.slide-btn:hover{background:var(--navy);color:#fff;border-color:var(--navy);transform:translateY(-1px)}
+.slide-info{font-size:12.5px;font-weight:700;color:var(--muted);white-space:nowrap}
+.gallery-viewport{overflow:hidden;position:relative;border-radius:var(--radius-lg)}
+.gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;transition:opacity .25s ease,transform .25s ease}
+.gallery.fade-out{opacity:0;transform:scale(.98)}
+.g-item{border:0;border-radius:var(--radius-md);overflow:hidden;cursor:pointer;padding:0;position:relative;background:#0b1d38;box-shadow:var(--shadow-sm);transition:transform .2s ease,box-shadow .2s ease}
+.g-item:hover{transform:translateY(-3px);box-shadow:var(--shadow-md)}
+.g-item img{width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform .4s ease}
+.g-item:hover img{transform:scale(1.06)}
+.g-item span{position:absolute;left:10px;bottom:10px;background:rgba(7,21,39,.9);color:#fff;border-radius:999px;padding:5px 12px;font-size:10.5px;font-weight:800;letter-spacing:.03em;backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.15)}
+
+/* FAQ Accordion */
+.faq{max-width:860px;margin:auto;display:grid;gap:12px}
+details{background:#ffffff;border:1px solid var(--line);border-radius:var(--radius-md);padding:4px 22px;box-shadow:var(--shadow-sm);transition:border-color .2s ease}
+details[open]{border-color:rgba(43,134,217,.4);box-shadow:var(--shadow-md)}
+details summary{cursor:pointer;font-weight:800;color:var(--navy);font-size:15.5px;padding:16px 0;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center}
+details summary::-webkit-details-marker{display:none}
+details summary::after{content:"+";color:var(--red);font-size:24px;font-weight:800;line-height:1}
+details[open] summary::after{content:"–";color:var(--blue-sky)}
+details p{color:var(--muted);font-size:14.5px;margin:0 0 16px;line-height:1.7}
+
+/* Testimonials */
+.tst{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.tst-card{background:linear-gradient(180deg,#0e2649 0%,#0a1d37 100%);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius-lg);padding:26px;color:#fff;box-shadow:var(--shadow-dark);display:flex;flex-direction:column}
+.stars{color:#f5a623;display:flex;gap:3px;margin-bottom:14px}
+.stars .ic{width:18px;height:18px;fill:currentColor;stroke:none}
+.tst-card p{color:#d4e2f3;font-size:14px;margin:0 0 20px;line-height:1.65;flex:1}
+.tst-who{display:flex;gap:12px;align-items:center;padding-top:14px;border-top:1px solid rgba(255,255,255,.08)}
+.tst-who .av{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--red) 0%,var(--blue-sky) 100%);color:#fff;display:grid;place-items:center;font-weight:900;font-size:15px;box-shadow:0 4px 12px rgba(11,29,56,.4)}
+.tst-who b{display:block;font-size:14px;color:#fff}
+.tst-who small{color:#9fb2cb;font-size:12px}
+
+/* CTA Card */
+.cta{background:radial-gradient(circle at 10% 20%,rgba(56,189,248,.25) 0%,transparent 45%),radial-gradient(circle at 90% 80%,rgba(197,38,57,.3) 0%,transparent 45%),linear-gradient(135deg,#c52639 0%,#183a69 60%,#071527 100%);color:#fff;border-radius:var(--radius-xl);padding:clamp(32px,5vw,56px);text-align:center;box-shadow:0 24px 50px rgba(11,29,56,.25);border:1px solid rgba(255,255,255,.18);position:relative;overflow:hidden}
+.cta h2{color:#fff;margin:0 0 12px;font-size:clamp(26px,4vw,42px)}
+.cta p{color:#f0f5fc;margin:0 auto 26px;max-width:660px;font-size:16px;line-height:1.65;text-align:center;text-align-last:center}
+
+/* Contact Section */
+.contact-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,4.5vw,52px);align-items:start}
+.contact-box{background:#ffffff;border:1px solid var(--line);border-radius:var(--radius-lg);padding:28px;box-shadow:var(--shadow-sm)}
+.contact-box h3{margin-top:0;color:var(--navy);font-size:20px;border-bottom:2px solid var(--blue-soft);padding-bottom:12px}
+.contact-line{padding:14px 0;border-bottom:1px solid var(--line-soft);display:flex;flex-direction:column;gap:3px}
+.contact-line:last-child{border:0}
+.contact-line small{color:var(--red);text-transform:uppercase;letter-spacing:.1em;font-weight:800;font-size:11px}
+.contact-line div{font-size:14.5px;color:var(--ink);line-height:1.6}
+.contact-line a{color:var(--navy2);font-weight:700}
+.contact-line a:hover{color:var(--red)}
+.map-wrap{margin-top:22px;border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow-sm)}
+.map-wrap iframe{display:block;width:100%;height:320px;border:0}
+
+/* Footer */
+footer{background:var(--navy-deep);color:#96a9c2;padding:52px 0 24px;font-size:13.5px;border-top:1px solid rgba(255,255,255,.08)}
+.foot-grid{display:grid;grid-template-columns:1.35fr 1fr 1fr 1.25fr;gap:32px}
+.foot-brand{display:flex;align-items:center;gap:12px;color:#fff;font-weight:900;margin-bottom:14px;font-size:15px}
+.foot-brand img{width:46px;height:42px;object-fit:contain;background:#fff;border-radius:9px;padding:3px}
+footer h4{color:#fff;font-size:14.5px;margin:0 0 14px;letter-spacing:.02em}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:9px}
+footer a:hover{color:#fff}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.08);margin-top:36px;padding-top:20px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12.5px;color:#7e93af}
+
+/* Photo Lightbox Modal */
+.modal{display:none;position:fixed;inset:0;background:rgba(2,8,18,.92);z-index:110;align-items:center;justify-content:center;padding:24px;backdrop-filter:blur(6px)}
+.modal.open{display:flex}
+.modal-inner{max-width:960px;width:100%;position:relative}
+.modal img{max-height:80vh;width:100%;object-fit:contain;border-radius:var(--radius-lg);box-shadow:0 24px 60px rgba(0,0,0,.6)}
+.modal-close{position:absolute;right:0;top:-46px;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.18);color:#fff;border:0;font-size:26px;cursor:pointer;display:grid;place-items:center}
+.modal-close:hover{background:var(--red)}
+.modal-title{color:#fff;text-align:center;font-weight:800;font-size:15px;margin-top:12px;letter-spacing:.02em}
+body.modal-open{overflow:hidden}
+
+/* SERVICE DETAILS MODAL */
+.svc-modal{display:none;position:fixed;inset:0;background:rgba(4,12,24,.88);z-index:120;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(8px)}
+.svc-modal.open{display:flex}
+.svc-modal-card{max-width:820px;width:100%;max-height:90vh;background:#ffffff;border-radius:var(--radius-xl);overflow:hidden;box-shadow:0 28px 70px rgba(0,0,0,.5);display:flex;flex-direction:column;position:relative;animation:modalIn .25s ease-out}
+@keyframes modalIn{from{opacity:0;transform:scale(.95) translateY(10px)}to{opacity:1;transform:scale(1) translateY(0)}}
+.svc-modal-head{position:relative;height:240px;background:#0b1d38}
+.svc-modal-head img{width:100%;height:100%;object-fit:cover}
+.svc-modal-head::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,21,39,.2) 20%,rgba(7,21,39,.95) 100%)}
+.svc-modal-head-body{position:absolute;left:28px;right:28px;bottom:20px;z-index:2;color:#fff}
+.svc-modal-head-body span{display:inline-block;padding:4px 12px;background:var(--red);color:#fff;font-size:11px;font-weight:800;border-radius:999px;margin-bottom:8px;letter-spacing:.05em;text-transform:uppercase}
+.svc-modal-head-body h2{color:#fff;margin:0;font-size:clamp(22px,3.2vw,30px)}
+.svc-modal-close{position:absolute;top:16px;right:16px;z-index:10;width:38px;height:38px;border-radius:50%;background:rgba(7,21,39,.75);border:1px solid rgba(255,255,255,.2);color:#fff;font-size:24px;cursor:pointer;display:grid;place-items:center;transition:background .2s ease}
+.svc-modal-close:hover{background:var(--red)}
+.svc-modal-content{padding:28px;overflow-y:auto;max-height:calc(90vh - 240px)}
+.svc-modal-sec{margin-bottom:22px}
+.svc-modal-sec h4{color:var(--navy);font-size:15px;margin:0 0 8px;display:flex;align-items:center;gap:8px}
+.svc-modal-sec h4 .ic{color:var(--blue-sky);width:18px;height:18px}
+.svc-modal-sec p{font-size:14.5px;color:var(--ink);line-height:1.7;margin:0}
+.svc-modal-sec ul{margin:0;padding-left:20px;color:var(--muted);font-size:14px;line-height:1.7}
+.svc-modal-chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:8px}
+.svc-modal-actions{display:flex;gap:12px;margin-top:28px;padding-top:20px;border-top:1px solid var(--line);flex-wrap:wrap}
+
+/* FLOATING WHATSAPP BUTTON & INTERACTIVE FORM CARD */
+.wa-float-wrap{position:fixed;right:20px;bottom:84px;z-index:95;display:flex;flex-direction:column;align-items:flex-end}
+.wa-float-btn{display:inline-flex;align-items:center;gap:10px;background:#25D366;color:#fff;padding:12px 20px;border-radius:999px;font-weight:800;font-size:14px;box-shadow:0 10px 25px rgba(37,211,102,.45);border:0;cursor:pointer;transition:transform .2s ease,box-shadow .2s ease;letter-spacing:.02em}
+.wa-float-btn:hover{background:#20bd5a;transform:translateY(-2px);box-shadow:0 14px 30px rgba(37,211,102,.55)}
+.wa-float-btn .wa-ic{width:22px;height:22px;fill:currentColor}
+.wa-float-btn .pulse{width:8px;height:8px;border-radius:50%;background:#fff;animation:ping 1.4s cubic-bezier(0,0,.2,1) infinite}
+@keyframes ping{75%,100%{transform:scale(2.2);opacity:0}}
+
+/* WhatsApp Form Popup Box */
+.wa-card{display:none;position:absolute;bottom:calc(100% + 14px);right:0;width:min(380px,calc(100vw - 32px));background:#ffffff;border-radius:var(--radius-lg);box-shadow:0 24px 60px rgba(11,29,56,.28),0 0 0 1px rgba(11,29,56,.08);overflow:hidden;animation:waCardIn .25s ease-out}
+@keyframes waCardIn{from{opacity:0;transform:translateY(12px) scale(.96)}to{opacity:1;transform:translateY(0) scale(1)}}
+.wa-card.open{display:block}
+.wa-card-head{background:linear-gradient(135deg,#075e54 0%,#128c7e 100%);color:#fff;padding:18px 20px;display:flex;align-items:center;justify-content:space-between}
+.wa-card-head b{display:block;font-size:15px;line-height:1.2}
+.wa-card-head small{color:#c1f0e8;font-size:11.5px}
+.wa-card-close{background:transparent;border:0;color:#fff;font-size:22px;cursor:pointer;line-height:1;padding:4px}
+.wa-card-body{padding:20px}
+.wa-field{margin-bottom:14px}
+.wa-field label{display:block;font-size:12px;font-weight:800;color:var(--navy);margin-bottom:5px;letter-spacing:.02em}
+.wa-field input,.wa-field textarea,.wa-field select{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:8px;font-family:inherit;font-size:13.5px;color:var(--ink);background:#fff;outline:none;transition:border-color .2s ease}
+.wa-field input:focus,.wa-field textarea:focus,.wa-field select:focus{border-color:var(--blue-sky);box-shadow:0 0 0 3px rgba(43,134,217,.15)}
+.wa-field textarea{resize:vertical;min-height:70px}
+.wa-submit-btn{width:100%;display:flex;align-items:center;justify-content:center;gap:8px;background:#25D366;color:#fff;border:0;border-radius:10px;padding:12px;font-weight:800;font-size:14px;cursor:pointer;box-shadow:0 6px 18px rgba(37,211,102,.35);transition:all .2s ease}
+.wa-submit-btn:hover{background:#20bd5a;transform:translateY(-1px)}
+
+/* Focus outline for a11y */
+:focus-visible{outline:3px solid #ef7583;outline-offset:3px}
+
+/* RESPONSIVE DESIGN (Ponsel & Tablet) */
+@media(max-width:1020px){
+  .navlinks{display:none}
+  .menu{display:grid}
+  .navlinks.open{display:flex;position:absolute;left:20px;right:20px;top:calc(100% + 8px);flex-direction:column;align-items:stretch;gap:4px;padding:16px;background:#091d36;border:1px solid rgba(255,255,255,.15);border-radius:var(--radius-lg);box-shadow:0 22px 50px rgba(0,0,0,.5)}
+  .navlinks.open a:not(.navcta){padding:12px 14px;border-radius:8px;font-size:14px}
+  .navlinks.open a:not(.navcta):hover{background:rgba(255,255,255,.08)}
+  .navlinks.open a:not(.navcta)::after{display:none}
+  .navlinks.open .navcta{text-align:center;margin-top:8px;padding:12px}
+  .svc-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .values{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:900px){
+  .hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr;gap:36px}
+  .feat-row{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .vm-grid-sec{grid-template-columns:1fr}
+  .legal-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .foot-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .collage .mini,.about-collage .mini{display:none}
+  .svc-card.featured{grid-template-columns:1fr}
+  .svc-card.featured .svc-media{height:200px}
+}
+@media(max-width:640px){
+  .container{width:calc(100% - 32px)}
+  .hero{padding:44px 0 52px}
+  .hero h1{font-size:clamp(30px,8.5vw,40px);letter-spacing:-.03em}
+  .hero-stats{gap:20px}
+  .hstat b{font-size:26px}
+  .feat-strip{margin-top:-20px}
+  .feat-row{grid-template-columns:1fr;gap:12px}
+  .feat{padding:18px}
+  .svc-grid{grid-template-columns:1fr;gap:18px}
+  .values{grid-template-columns:1fr}
+  .legal-grid{grid-template-columns:1fr}
+  .logos{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .logo-tile{height:96px;padding:14px}
+  .logo-tile img{max-height:46px}
+  .gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .gallery-nav{flex-direction:column;align-items:flex-start}
+  .gallery-ctrls{width:100%;justify-content:space-between}
+  .tst{grid-template-columns:1fr;gap:16px}
+  .foot-grid{grid-template-columns:1fr;gap:26px}
+  .hero-actions .btn,.hero-actions .phone{width:100%}
+  .cta{padding:30px 20px}
+  .cta div{flex-direction:column;width:100%}
+  .cta .btn{width:100%}
+  .wa-float-wrap{right:12px;bottom:78px}
+  .wa-float-btn{padding:10px 16px;font-size:13px}
+  .wa-float-btn span.label{display:none}
+  .svc-modal-head{height:180px}
+  .svc-modal-content{padding:20px}
+}
+</style></head><body>
+
+<!-- SVG Icon Symbols Library -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.5-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2Z"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><path d="M4 5h16v14H4z"/><path d="m4 7 8 6 8-6"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.6 5.3 5.9.9-4.2 4.1 1 5.9-5.3-2.8-5.3 2.8 1-5.9L3.5 9.2l5.9-.9z"/></symbol>
+<symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 4 3 7 7 9 4-2 7-5 7-9V6z"/><path d="m9 12 2 2 4-4"/></symbol>
+<symbol id="i-badge" viewBox="0 0 24 24"><circle cx="12" cy="9" r="5"/><path d="m9 13-1 7 4-2 4 2-1-7"/></symbol>
+<symbol id="i-file" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+<symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6-10-6-10-6Z"/><circle cx="12" cy="12" r="2.6"/></symbol>
+<symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></symbol>
+<symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 20a5.5 5.5 0 0 1 11 0"/><circle cx="17.5" cy="9.5" r="2.5"/><path d="M16 20a4.5 4.5 0 0 1 6.5-4"/></symbol>
+<symbol id="i-clean" viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M6.3 6.3l2.1 2.1M15.6 15.6l2.1 2.1M17.7 6.3l-2.1 2.1M8.4 15.6l-2.1 2.1"/></symbol>
+<symbol id="i-bed" viewBox="0 0 24 24"><path d="M3 18v-6h18v6M3 12V7h11v5M14 12V9h7v3M3 18v2M21 18v2"/></symbol>
+<symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 4 13c0-6 6-9 16-9 0 10-5 16-9 16Z"/><path d="M4 20c4-4 7-6 12-7"/></symbol>
+<symbol id="i-box" viewBox="0 0 24 24"><path d="m3 7 9-4 9 4-9 4z"/><path d="M3 7v10l9 4 9-4V7"/><path d="M12 11v10"/></symbol>
+<symbol id="i-car" viewBox="0 0 24 24"><path d="M5 13l1.6-5h10.8L19 13v5H5z"/><circle cx="8" cy="17.5" r="1.4"/><circle cx="16" cy="17.5" r="1.4"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+</defs></svg>
+
+<!-- Header & Navigasi -->
+<header class="site-header"><div class="container nav">
+<a class="brand" href="#top"><img src="assets/img01.webp" alt="Logo PT. Magali Jaya Abadi"><span>PT. MAGALI JAYA ABADI<small>FACILITY CARE • CLEAN SPACE HEALTHY LIFE</small></span></a>
+<button class="menu" type="button" aria-label="Buka menu navigasi" aria-controls="primary-nav" aria-expanded="false"><span aria-hidden="true">☰</span></button>
+<nav class="navlinks" id="primary-nav" aria-label="Menu utama">
+<a href="#tentang">Tentang</a>
+<a href="#layanan">Layanan</a>
+<a href="#strategic">Strategic</a>
+<a href="#legalitas">Legalitas</a>
+<a href="#customer">Customer</a>
+<a href="#gallery">Documentation</a>
+<a href="#faq">FAQ</a>
+<a href="#kontak">Kontak</a>
+<a class="navcta" href="#kontak">Hubungi Kami</a>
+</nav>
+</div></header>
+
+<main id="top">
+
+<!-- Hero Section with Visible Heading & Dynamic Accents -->
+<section class="hero"><div class="container hero-grid">
+<div>
+<div class="eyebrow on-dark">Professional • Competent • Credible</div>
+<h1>Supporting You with <span class="hl">Facility Care</span> &amp; <span class="hl-blue">Outsourcing</span></h1>
+<p class="lead on-dark">PT. Magali Jaya Abadi (MJA) adalah perusahaan penyedia layanan tenaga kerja siap pakai terkemuka di bidang Cleaning Service, Security, Parkir, dan penunjang bisnis untuk meningkatkan efisiensi dan akselerasi operasional perusahaan Anda.</p>
+<div class="hero-actions">
+<a class="btn" href="#kontak">Konsultasi Sekarang</a>
+<a class="phone" href="tel:+6281281184882"><svg class="ic"><use href="#i-phone"/></svg> 0812 8118 4882</a>
+</div>
+<div class="hero-stats">
+<div class="hstat"><b>2018</b><span>Tahun berdiri</span></div>
+<div class="hstat"><b>7+</b><span>Solusi layanan utama</span></div>
+<div class="hstat"><b>ASK</b><span>Attitude • Skills • Knowledge</span></div>
+<div class="hstat"><b>5R</b><span>Ringkas • Rapih • Resik • Rawat • Rajin</span></div>
+</div>
+</div>
+<div class="collage">
+<img class="main" src="assets/img24.webp" alt="Petugas MJA membersihkan area kerja" loading="eager" fetchpriority="high">
+<img class="mini" src="assets/img07.webp" alt="Petugas keamanan profesional MJA" loading="lazy">
+<div class="play"><svg class="ic"><use href="#i-play"/></svg><div><b>Standar Kerja 5R</b><span>Disiplin &amp; Kualitas Kerja Teruji</span></div></div>
+</div>
+</div></section>
+
+<!-- Floating Feature Strip -->
+<div class="feat-strip"><div class="container"><div class="feat-row">
+<div class="feat"><div class="icon"><svg class="ic"><use href="#i-badge"/></svg></div><h3>Tenaga Terlatih</h3><p>Personel berdedikasi tinggi dengan standar ASK (Attitude, Skills, Knowledge).</p></div>
+<div class="feat"><div class="icon"><svg class="ic"><use href="#i-shield"/></svg></div><h3>Legalitas Lengkap</h3><p>Akte Notaris, NIB, NPWP, dan keanggotaan resmi asosiasi APKLINDO.</p></div>
+<div class="feat"><div class="icon"><svg class="ic"><use href="#i-clock"/></svg></div><h3>Dukungan 24/7</h3><p>Tim pengawas siaga memastikan kelancaran operasional fasilitas Anda.</p></div>
+<div class="feat"><div class="icon"><svg class="ic"><use href="#i-file"/></svg></div><h3>Metode 5R Teruji</h3><p>Pola kerja sistematis: Ringkas, Rapih, Resik, Rawat, dan Rajin.</p></div>
+</div></div></div>
+
+<!-- Section: Tentang Kami -->
+<section id="tentang" class="section light-pearl"><div class="container about-grid">
+<div class="about-collage">
+<img class="main" src="assets/img03.webp" alt="Company overview PT. Magali Jaya Abadi">
+<img class="mini" src="assets/img05.webp" alt="Housekeeping team" loading="lazy">
+<div class="exp"><b>2018</b><span>Berdiri Sejak</span></div>
+</div>
+<div>
+<div class="eyebrow">About PT. MJA</div>
+<h2>Partner operasional dengan <span class="hl">Trusted Expertise</span></h2>
+<p class="lead">PT. Magali Jaya Abadi (MJA) adalah perusahaan penyedia layanan tenaga (outsourcing) siap pakai terkemuka yang menyediakan tenaga kerja kompeten di bidangnya sejak tahun 2018.</p>
+<p class="lead" style="margin-top:12px">Kami bergerak di bidang Cleaning Service, Security, dan Parkir serta dikelola oleh tim berpengalaman profesional. Kami sadar bahwa kenyamanan, keamanan, dan kebersihan merupakan fondasi utama agar bisnis mitra terus berkembang tanpa kendala teknis.</p>
+<div class="vm-item"><div class="icon"><svg class="ic"><use href="#i-eye"/></svg></div><div><h3>Our Vision</h3><p>Memberikan pelayanan berkualitas dan bertanggung jawab serta selalu mengutamakan kepuasan pelanggan.</p></div></div>
+<div class="vm-item"><div class="icon"><svg class="ic"><use href="#i-target"/></svg></div><div><h3>Our Mission</h3><p>Menjadi perusahaan profesional, kompeten, kredibel, dan berdaya saing global dengan standar mutu berkesinambungan.</p></div></div>
+<div style="margin-top:24px"><a class="btn" href="#layanan">Eksplor Layanan Kami</a></div>
+</div>
+</div></section>
+
+<!-- Section: Layanan (Clickable Cards with Informative Modal) -->
+<section id="layanan" class="section dark-sec"><div class="container">
+<div style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:40px">
+<div style="max-width:680px">
+<div class="eyebrow on-dark">Our Services</div>
+<h2>Solusi komprehensif penunjang efisiensi bisnis</h2>
+<p class="lead on-dark">Klik salah satu layanan di bawah untuk melihat rincian ruang lingkup, manfaat operasional, dan cakupan sektor.</p>
+</div>
+<a class="btn" href="#kontak">Ajukan Penawaran Layanan</a>
+</div>
+
+<div class="svc-grid">
+<!-- Featured: Business Process Outsourcing -->
+<article class="svc-card featured" data-svc="bpo" tabindex="0" role="button" aria-label="Buka detail Business Process Outsourcing">
+<div class="svc-media">
+<img src="assets/img04.webp" alt="Business Process Outsourcing" loading="lazy">
+<span class="svc-tag"><svg class="ic"><use href="#i-users"/></svg> Pemborongan Terpadu</span>
+<span class="svc-click-hint">Lihat Detail ↗</span>
+</div>
+<div class="svc-body">
+<h3>Business Process Outsourcing (BPO) <span>↗</span></h3>
+<p>Solusi pemborongan pekerjaan penunjang untuk membantu perusahaan menghemat biaya operasional, memitigasi risiko ketenagakerjaan, dan membebaskan manajemen untuk fokus pada kompetensi inti bisnis.</p>
+<div class="svc-chips">
+<span class="chip chip-highlight">Efisiensi Biaya</span>
+<span class="chip chip-highlight">Mitigasi Risiko</span>
+<span class="chip chip-blue">Klik untuk detail lengkap</span>
+<span class="chip">Supervisi Rutin</span>
+</div>
+</div>
+</article>
+
+<!-- Cleaning Service -->
+<article class="svc-card" data-svc="cleaning" tabindex="0" role="button" aria-label="Buka detail Cleaning Service">
+<div class="svc-media">
+<img src="assets/img24.webp" alt="Cleaning Service MJA" loading="lazy">
+<span class="svc-tag"><svg class="ic"><use href="#i-clean"/></svg> Kebersihan &amp; Higienitas</span>
+<span class="svc-click-hint">Detail ↗</span>
+</div>
+<div class="svc-body">
+<h3>Cleaning Service <span>↗</span></h3>
+<p>Layanan kebersihan menyeluruh area indoor maupun outdoor dengan peralatan modern, chemical ramah lingkungan, dan standar kerja 5R.</p>
+<div class="svc-chips">
+<span class="chip">Perkantoran</span>
+<span class="chip">Rumah Sakit</span>
+<span class="chip">Pabrik</span>
+<span class="chip">Hotel</span>
+<span class="chip chip-blue">+ Info Lengkap</span>
+</div>
+</div>
+</article>
+
+<!-- Housekeeping -->
+<article class="svc-card" data-svc="housekeeping" tabindex="0" role="button" aria-label="Buka detail Housekeeping">
+<div class="svc-media">
+<img src="assets/img05.webp" alt="Housekeeping Service" loading="lazy">
+<span class="svc-tag"><svg class="ic"><use href="#i-bed"/></svg> Hospitalitas &amp; Resik</span>
+<span class="svc-click-hint">Detail ↗</span>
+</div>
+<div class="svc-body">
+<h3>Housekeeping <span>↗</span></h3>
+<p>Menangani keindahan, kerapihan, kebersihan, dan kesiapan kamar serta area publik hotel maupun fasilitas komersial dengan standar perhotelan bintang.</p>
+<div class="svc-chips">
+<span class="chip">Room Section</span>
+<span class="chip">Public Area</span>
+<span class="chip">Hospitality SOP</span>
+<span class="chip chip-blue">+ Info Lengkap</span>
+</div>
+</div>
+</article>
+
+<!-- Security Service -->
+<article class="svc-card" data-svc="security" tabindex="0" role="button" aria-label="Buka detail Security Service">
+<div class="svc-media">
+<img src="assets/img07.webp" alt="Security Service" loading="lazy">
+<span class="svc-tag"><svg class="ic"><use href="#i-shield"/></svg> Keamanan &amp; Ketertiban</span>
+<span class="svc-click-hint">Detail ↗</span>
+</div>
+<div class="svc-body">
+<h3>Security Service <span>↗</span></h3>
+<p>Penyediaan satuan pengamanan bersertifikat dengan kedisiplinan prima, tanggap darurat, dan pengawasan protokol keamanan terintegrasi.</p>
+<div class="svc-chips">
+<span class="chip">Office Building</span>
+<span class="chip">Kawasan Industri</span>
+<span class="chip">Sertifikat Resmi</span>
+<span class="chip chip-blue">+ Info Lengkap</span>
+</div>
+</div>
+</article>
+
+<!-- Gardener Service -->
+<article class="svc-card" data-svc="gardener" tabindex="0" role="button" aria-label="Buka detail Gardener Service">
+<div class="svc-media">
+<img src="assets/img42.webp" alt="Gardener Service" loading="lazy">
+<span class="svc-tag"><svg class="ic"><use href="#i-leaf"/></svg> Lanskap &amp; Taman Asri</span>
+<span class="svc-click-hint">Detail ↗</span>
+</div>
+<div class="svc-body">
+<h3>Gardener Service <span>↗</span></h3>
+<p>Perawatan estetika ruang hijau, pemeliharaan tanaman berkala, pemupukan, pemangkasan rapi, serta tata lanskap untuk lingkungan kerja yang nyaman.</p>
+<div class="svc-chips">
+<span class="chip">Perawatan Rutin</span>
+<span class="chip">Pemilihan Tanaman</span>
+<span class="chip">Desain Lanskap</span>
+<span class="chip chip-blue">+ Info Lengkap</span>
+</div>
+</div>
+</article>
+
+<!-- General Supplier -->
+<article class="svc-card" data-svc="supplier" tabindex="0" role="button" aria-label="Buka detail General Supplier">
+<div class="svc-media">
+<img src="assets/img08.webp" alt="General Supplier" loading="lazy">
+<span class="svc-tag"><svg class="ic"><use href="#i-box"/></svg> Pengadaan Tepat Waktu</span>
+<span class="svc-click-hint">Detail ↗</span>
+</div>
+<div class="svc-body">
+<h3>General Supplier <span>↗</span></h3>
+<p>Pengadaan barang dan perlengkapan penunjang operasional kantor, kawasan industri, chemical cleaning, hingga APD keselamatan kerja (K3).</p>
+<div class="svc-chips">
+<span class="chip">Alat Cleaning</span>
+<span class="chip">Peralatan Safety K3</span>
+<span class="chip">ATK Kantor</span>
+<span class="chip chip-blue">+ Info Lengkap</span>
+</div>
+</div>
+</article>
+
+<!-- Parking Service -->
+<article class="svc-card" data-svc="parking" tabindex="0" role="button" aria-label="Buka detail Parking Management">
+<div class="svc-media">
+<img src="assets/img56.webp" alt="Parking Management" loading="lazy">
+<span class="svc-tag"><svg class="ic"><use href="#i-car"/></svg> Manajemen Parkir</span>
+<span class="svc-click-hint">Detail ↗</span>
+</div>
+<div class="svc-body">
+<h3>Parking Management <span>↗</span></h3>
+<p>Pengelolaan sirkulasi dan area perparkiran tertib, nyaman, aman, dengan petugas ramah serta sistem pengawasan kendaraan yang disiplin.</p>
+<div class="svc-chips">
+<span class="chip">Gedung Perkantoran</span>
+<span class="chip">Rumah Sakit</span>
+<span class="chip">Pusat Retail</span>
+<span class="chip chip-blue">+ Info Lengkap</span>
+</div>
+</div>
+</article>
+</div>
+</div></section>
+
+<!-- Section: Visi, Misi & ROYAL Values (with Smooth Card Hover) -->
+<section id="strategic" class="section light-pearl"><div class="container">
+<div class="sec-head center">
+<div class="eyebrow">Strategic Direction</div>
+<h2>Fondasi nilai dan arah pertumbuhan MJA</h2>
+<p class="lead">Arahkan kursor pada kartu visi dan misi untuk melihat komitmen mutu layanan kami secara mendalam.</p>
+</div>
+
+<div class="vm-grid-sec">
+<div class="vm-card" tabindex="0">
+<h3><svg class="ic"><use href="#i-eye"/></svg> Visi Perusahaan</h3>
+<p>Memberikan pelayanan berkualitas dan bertanggung jawab serta selalu mengutamakan kepuasan pelanggan melalui konsistensi mutu tenaga kerja dan penerapan SOP berstandar industri.</p>
+</div>
+<div class="vm-card" tabindex="0">
+<h3><svg class="ic"><use href="#i-target"/></svg> Misi Perusahaan</h3>
+<ul>
+<li>Mengambil bagian pembangunan dan menghasilkan SDM yang berkualitas unggul.</li>
+<li>Menjadikan perusahaan profesional, kompeten, dan kredibel di seluruh Indonesia.</li>
+<li>Mampu berdaya saing tinggi di pasar regional maupun global.</li>
+<li>Memiliki jaringan kantor representatif di kota-kota strategis Indonesia.</li>
+<li>Meningkatkan standar layanan berkesinambungan berbasis <em>Customer Satisfaction</em>.</li>
+</ul>
+</div>
+</div>
+
+<!-- ROYAL Values Box with Dual Accent Glow -->
+<div class="values-box">
+<div class="values-head">
+<div class="eyebrow on-dark">Our Core Values</div>
+<h2>Budaya Kerja ROYAL</h2>
+<p class="lead on-dark" style="margin:0 auto">Nilai luhur yang ditanamkan kepada seluruh jajaran manajemen dan personel lapangan.</p>
+</div>
+<div class="values">
+<article class="value"><div class="letter">R</div><h3>Responsible</h3><p>Menjalankan dan menyelesaikan pekerjaan dengan baik karena pekerjaan adalah bagian dari amanah mulia.</p></article>
+<article class="value"><div class="letter">O</div><h3>Optimistic</h3><p>Meyakini selalu ada kebaikan dan kemajuan dalam setiap pekerjaan yang dikerjakan secara tulus dan benar.</p></article>
+<article class="value"><div class="letter">Y</div><h3>Yielded</h3><p>Menghargai waktu dan tenaga demi hasil yang produktif serta memberi kontribusi positif berkelanjutan.</p></article>
+<article class="value"><div class="letter">A</div><h3>Active</h3><p>Antusias, penuh inisiatif, selalu berpikir konstruktif, serta menciptakan suasana kerja yang harmonis.</p></article>
+<article class="value"><div class="letter">L</div><h3>Leading</h3><p>Senantiasa menjadi yang terdepan dalam mutu pelayanan dan konsistensi kepuasan mitra.</p></article>
+</div>
+</div>
+</div></section>
+
+<!-- Section: Legalitas Perusahaan -->
+<section id="legalitas" class="section light-pure"><div class="container">
+<div class="sec-head">
+<div class="eyebrow">Legality &amp; Credentials</div>
+<h2>Legalitas resmi perusahaan</h2>
+<p class="lead">PT. Magali Jaya Abadi beroperasi dengan izin usaha resmi dan legalitas hukum lengkap sesuai perundang-undangan Republik Indonesia.</p>
+</div>
+<div class="legal-grid">
+<div class="legal"><strong>Akte Pendirian Nomor</strong><span>Nomor 19 tanggal 10 Agustus 2024</span></div>
+<div class="legal"><strong>Dibuat oleh Notaris</strong><span>Yurike Goldania, SH., Mkn</span></div>
+<div class="legal"><strong>Keputusan Menkumham</strong><span>Nomor AHU-0170846.01.11 Tahun 2024</span></div>
+<div class="legal"><strong>Nomor Pokok Wajib Pajak (NPWP)</strong><span>05.500.048.3-408.000</span></div>
+<div class="legal"><strong>Surat Keterangan Domisili Usaha</strong><span>474/364/IX/2020</span></div>
+<div class="legal"><strong>Keanggotaan Asosiasi APKLINDO</strong><span>TA/10239/KRW/VIII/2021</span></div>
+<div class="legal" style="grid-column:1/-1"><strong>Nomor Induk Berusaha (NIB)</strong><span>2008240017517 — Terverifikasi Berusaha Resmi</span></div>
+</div>
+</div></section>
+
+<!-- Section: Mitra & Customer (Clean, Proportional & Pure Badge) -->
+<section id="customer" class="section customer-section"><div class="container">
+<div class="sec-head center">
+<div class="eyebrow">Our Partners</div>
+<h2>Mitra dan customer terpercaya</h2>
+<p class="lead">Dukungan kepercayaan dari berbagai institusi pendidikan, fasilitas kesehatan, instansi pemerintah, hingga industri komersial.</p>
+</div>
+<div class="logos">
+<div class="logo-tile" title="TK Buahati"><img loading="lazy" src="assets/customer-tk-buahati.png" alt="TK Buahati"></div>
+<div class="logo-tile" title="Piramid"><img loading="lazy" src="assets/customer-piramid.png" alt="Piramid"></div>
+<div class="logo-tile" title="Karya Husada"><img loading="lazy" src="assets/customer-karya-husada.png" alt="Karya Husada"></div>
+<div class="logo-tile" title="Yayasan Astri Bakti Insani"><img loading="lazy" src="assets/customer-astri-bakti-insani.png" alt="Yayasan Astri Bakti Insani"></div>
+<div class="logo-tile" title="Atro Das"><img loading="lazy" src="assets/customer-atro-das.png" alt="Atro Das"></div>
+<div class="logo-tile" title="Alizza"><img loading="lazy" src="assets/customer-alizza.png" alt="Alizza"></div>
+<div class="logo-tile" title="Fuji Kitchen"><img loading="lazy" src="assets/customer-fuji-kitchen.png" alt="Fuji Kitchen"></div>
+<div class="logo-tile" title="Malci Cikampek"><img loading="lazy" src="assets/customer-malci-kampek.png" alt="Mal Cikampek"></div>
+<div class="logo-tile" title="RSUD Jatisari"><img loading="lazy" src="assets/customer-rsud-jatisari.png" alt="RSUD Jatisari"></div>
+<div class="logo-tile" title="Kementerian Perhubungan"><img loading="lazy" src="assets/customer-kemenhub.png" alt="Kementerian Perhubungan"></div>
+<div class="logo-tile" title="Lanud Suryadarma"><img loading="lazy" src="assets/customer-lanud.png" alt="Lanud"></div>
+<div class="logo-tile" title="Buahati Islamic School"><img loading="lazy" src="assets/customer-buahati.png" alt="Buahati"></div>
+<div class="logo-tile" title="Izza"><img loading="lazy" src="assets/customer-izza.png" alt="Izza"></div>
+<div class="logo-tile" title="Alya Medical Center"><img loading="lazy" src="assets/customer-alya-medical.png" alt="Alya Medical"></div>
+</div>
+</div></section>
+
+<!-- Section: Dokumentasi Kegiatan dengan Tab Kategori & Sliding 4 Gambar -->
+<section id="gallery" class="section light-pure"><div class="container">
+<div class="sec-head">
+<div class="eyebrow">Documentation</div>
+<h2>Dokumentasi kegiatan operasional</h2>
+<p class="lead">Aktivitas riil pelatihan, penempatan tenaga kebersihan, satpam, perawatan lanskap, dan logistik PT. Magali Jaya Abadi.</p>
+</div>
+
+<div class="gallery-nav">
+<div class="gallery-tabs" id="galleryTabs">
+<button type="button" class="tab-btn active tab-red" data-cat="random">🎲 Pilihan Acak (Sliding)</button>
+<button type="button" class="tab-btn" data-cat="all">Semua Foto</button>
+<button type="button" class="tab-btn" data-cat="Cleaning Service">Cleaning Service</button>
+<button type="button" class="tab-btn" data-cat="Gardener Service">Gardener Service</button>
+<button type="button" class="tab-btn" data-cat="General Supplier">General Supplier</button>
+<button type="button" class="tab-btn" data-cat="Parking">Parking</button>
+</div>
+<div class="gallery-ctrls">
+<button type="button" class="slide-btn" id="prevSlide" aria-label="Slide sebelumnya">‹</button>
+<span class="slide-info" id="slideInfo">1 / 1</span>
+<button type="button" class="slide-btn" id="nextSlide" aria-label="Slide berikutnya">›</button>
+</div>
+</div>
+
+<div class="gallery-viewport">
+<div class="gallery" id="galleryGrid"></div>
+</div>
+</div></section>
+
+<!-- Section: FAQ -->
+<section id="faq" class="section light-pearl"><div class="container">
+<div class="sec-head center">
+<div class="eyebrow">FAQ</div>
+<h2>Pertanyaan yang sering diajukan</h2>
+<p class="lead">Informasi praktis mengenai skema kemitraan, cakupan area, dan sistem kerja sama MJA.</p>
+</div>
+<div class="faq">
+<details open><summary>Layanan apa saja yang disediakan oleh PT. MJA?</summary><p>Kami menyediakan Cleaning Service, Security Service, Parking Management, Housekeeping, Gardener Service, General Supplier, serta Business Process Outsourcing (BPO) menyeluruh.</p></details>
+<details><summary>Wilayah operasional mana saja yang dilayani?</summary><p>Kantor operasional utama kami berada di Karawang dan Purwakarta, dengan kesiapan penempatan tenaga kerja ke seluruh wilayah Jawa Barat, Jabodetabek, dan perwakilan kota besar di Indonesia.</p></details>
+<details><summary>Bagaimana skema kerja sama yang ditawarkan?</summary><p>Kerja sama fleksibel: tersedia sistem kontrak jangka panjang (tahunan) maupun proyek khusus (event/short-term), lengkap dengan jaminan penggantian personel jika berhalangan.</p></details>
+<details><summary>Apakah tenaga kerja sudah melalui pelatihan sebelum ditempatkan?</summary><p>Pasti. Setiap personel wajib lulus modul pelatihan ASK (Attitude, Skills, Knowledge), pembekalan K3 dasar, dan penerapan kedisiplinan 5R.</p></details>
+<details><summary>Bagaimana prosedur survei lokasi dan pengajuan proposal?</summary><p>Anda dapat menghubungi tim kami melalui WhatsApp di 0812 8118 4882 atau form chat di pojok kanan layar. Tim teknis kami akan melakukan survei kebutuhan fasilitas Anda secara gratis.</p></details>
+</div>
+</div></section>
+
+<!-- Section: Testimonial Mitra -->
+<section class="section dark-sec-alt"><div class="container">
+<div class="sec-head center">
+<div class="eyebrow on-dark">Testimonials</div>
+<h2>Kepercayaan dari mitra kami</h2>
+<p class="lead on-dark">Kepuasan dan kenyamanan mitra kerja adalah tolok ukur kesuksesan PT. Magali Jaya Abadi.</p>
+</div>
+<div class="tst">
+<article class="tst-card">
+<div class="stars"><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg></div>
+<p>Tenaga kebersihan dan keamanan yang ditempatkan sangat disiplin. Komunikasi dengan manajemen supervisor selalu cepat dan solutif.</p>
+<div class="tst-who"><div class="av">MO</div><div><b>Manajer Operasional</b><small>Mitra Gedung Perkantoran</small></div></div>
+</article>
+<article class="tst-card">
+<div class="stars"><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg></div>
+<p>Sangat terbantu dengan skema BPO dari MJA. Kami bisa fokus penuh pada target produksi pabrik tanpa terbebani teknis rekrutmen pekerja penunjang.</p>
+<div class="tst-who"><div class="av">GA</div><div><b>Kepala Bagian GA</b><small>Klien Sektor Industri</small></div></div>
+</article>
+<article class="tst-card">
+<div class="stars"><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg></div>
+<p>Hasil kebersihan area publik dan kamar hotel konsisten rapi. Evaluasi bulanan selalu transparan dengan laporan kerja yang tertib.</p>
+<div class="tst-who"><div class="av">HM</div><div><b>Hospitality Manager</b><small>Klien Komersial &amp; Hotel</small></div></div>
+</article>
+</div>
+</div></section>
+
+<!-- Section: CTA Banner -->
+<section class="section light-pure" style="padding-bottom:clamp(36px,5vw,56px)"><div class="container">
+<div class="cta">
+<h2>Reliable Facility Care with <span class="hl">Proven Quality</span></h2>
+<p>Tingkatkan efisiensi dan kenyamanan fasilitas kerja Anda sekarang. Tim profesional PT. Magali Jaya Abadi siap merancang solusi ketenagakerjaan terbaik.</p>
+<div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+<a class="btn" href="tel:+6281281184882"><svg class="ic"><use href="#i-phone"/></svg> Hubungi Head Office</a>
+<a class="btn ghost" href="mailto:magajijayaabadi01@gmail.com"><svg class="ic"><use href="#i-mail"/></svg> Kirim Email Proposal</a>
+</div>
+</div>
+</div></section>
+
+<!-- Section: Kontak & Lokasi -->
+<section id="kontak" class="section light-pearl" style="padding-top:0"><div class="container contact-grid">
+<div>
+<div class="eyebrow">Contact Details</div>
+<h2>Siap bermitra dengan Anda</h2>
+<p class="lead">Kunjungi kantor kami atau hubungi perwakilan layanan untuk konsultasi dan jadwal survei lapangan.</p>
+<div class="map-wrap">
+<iframe title="Peta lokasi Head Office PT. Magali Jaya Abadi" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen src="https://www.google.com/maps?q=Kp.%20Ciselang%20RT%2FRW%20002%2F004%2C%20Desa%20Karangjaya%2C%20Kec.%20Tirtamulya%2C%20Kab.%20Karawang%2C%20Jawa%20Barat&output=embed"></iframe>
+</div>
+</div>
+
+<div class="contact-box">
+<h3>PT. MAGALI JAYA ABADI</h3>
+<div class="contact-line">
+<small>Head Office</small>
+<div>Kp. Ciselang RT/RW. 002/004, Desa Karangjaya, Kec. Tirtamulya, Kab. Karawang - Jawa Barat</div>
+</div>
+<div class="contact-line">
+<small>Nomor Telepon / WhatsApp</small>
+<div><a href="tel:+6281281184882">0812 8118 4882</a></div>
+</div>
+<div class="contact-line">
+<small>Alamat Email Resmi</small>
+<div><a href="mailto:magajijayaabadi01@gmail.com">magajijayaabadi01@gmail.com</a></div>
+</div>
+<div class="contact-line">
+<small>Branch Office Purwakarta</small>
+<div>Perumahan Bumi Jaya Indah (BJI) Blok AV No. 23, Desa Munjuljaya, Kec. Purwakarta, Kab. Purwakarta - Jawa Barat</div>
+</div>
+<div class="contact-line">
+<small>Telepon Kantor Cabang</small>
+<div><a href="tel:+6287778646710">0877 7864 6710</a></div>
+</div>
+<div class="contact-line">
+<small>Jam Operasional</small>
+<div>Senin - Sabtu: 08.00 - 17.00 WIB (Layanan Siaga 24 Jam)</div>
+</div>
+</div>
+</div></section>
+
+</main>
+
+<!-- Footer -->
+<footer><div class="container">
+<div class="foot-grid">
+<div>
+<div class="foot-brand"><img src="assets/img01.webp" alt="Logo PT. Magali Jaya Abadi"> PT. MAGALI JAYA ABADI</div>
+<p style="color:#94a8c2;margin:0;line-height:1.65">Penyedia layanan tenaga kerja (outsourcing) siap pakai terpercaya untuk facility care, kebersihan, keamanan, dan penunjang kelancaran bisnis.</p>
+</div>
+<div>
+<h4>Navigasi</h4>
+<ul>
+<li><a href="#tentang">Tentang Perusahaan</a></li>
+<li><a href="#layanan">Layanan &amp; Solusi</a></li>
+<li><a href="#strategic">Visi &amp; Misi</a></li>
+<li><a href="#legalitas">Legalitas &amp; Sertifikasi</a></li>
+<li><a href="#customer">Mitra Klien</a></li>
+<li><a href="#gallery">Dokumentasi</a></li>
+</ul>
+</div>
+<div>
+<h4>Layanan Utama</h4>
+<ul>
+<li><a href="#layanan">Business Process Outsourcing</a></li>
+<li><a href="#layanan">Cleaning Service &amp; 5R</a></li>
+<li><a href="#layanan">Security Service</a></li>
+<li><a href="#layanan">Housekeeping</a></li>
+<li><a href="#layanan">Parking Management</a></li>
+</ul>
+</div>
+<div>
+<h4>Kontak Cepat</h4>
+<ul>
+<li><a href="tel:+6281281184882">📞 0812 8118 4882 (Head Office)</a></li>
+<li><a href="tel:+6287778646710">📞 0877 7864 6710 (Branch)</a></li>
+<li><a href="mailto:magajijayaabadi01@gmail.com">✉️ magajijayaabadi01@gmail.com</a></li>
+<li>Karawang &amp; Purwakarta, Jawa Barat</li>
+</ul>
+</div>
+</div>
+<div class="foot-bottom">
+<span>© 2026 PT. Magali Jaya Abadi. Hak cipta dilindungi.</span>
+<span>FACILITY CARE • Clean Space Healthy Life</span>
+</div>
+</div></footer>
+
+<!-- Photo Lightbox Modal -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Foto dokumentasi" aria-hidden="true">
+<div class="modal-inner">
+<button class="modal-close" type="button" aria-label="Tutup foto">×</button>
+<img id="modalImg" alt="Foto dokumentasi yang diperbesar">
+<div class="modal-title" id="modalTitle"></div>
+</div>
+</div>
+
+<!-- SERVICE INFORMATIVE MODAL -->
+<div class="svc-modal" id="svcModal" role="dialog" aria-modal="true" aria-labelledby="svcModalTitle" aria-hidden="true">
+<div class="svc-modal-card">
+<button class="svc-modal-close" type="button" aria-label="Tutup modal layanan">×</button>
+<div class="svc-modal-head">
+<img id="svcModalImg" src="assets/img04.webp" alt="Foto layanan MJA">
+<div class="svc-modal-head-body">
+<span id="svcModalCategory">Layanan Utama</span>
+<h2 id="svcModalTitle">Nama Layanan</h2>
+</div>
+</div>
+<div class="svc-modal-content">
+<div class="svc-modal-sec">
+<h4><svg class="ic"><use href="#i-badge"/></svg> Deskripsi &amp; Ruang Lingkup</h4>
+<p id="svcModalDesc">Deskripsi lengkap mengenai layanan ini.</p>
+</div>
+<div class="svc-modal-sec">
+<h4><svg class="ic"><use href="#i-check"/></svg> Keunggulan &amp; Nilai Tambah</h4>
+<ul id="svcModalBenefits"></ul>
+</div>
+<div class="svc-modal-sec">
+<h4><svg class="ic"><use href="#i-target"/></svg> Cakupan Sektor &amp; Fasilitas</h4>
+<div class="svc-modal-chips" id="svcModalSectors"></div>
+</div>
+<div class="svc-modal-actions">
+<a class="btn" id="svcModalWaBtn" href="#" target="_blank" rel="noopener"><svg class="ic"><use href="#i-phone"/></svg> Konsultasi Layanan via WhatsApp</a>
+<button class="btn ghost" style="color:var(--ink);border-color:var(--line)" type="button" id="svcModalCloseBtn">Tutup</button>
+</div>
+</div>
+</div>
+</div>
+
+<!-- FLOATING WHATSAPP CTA BUTTON & INTERACTIVE FORM CARD -->
+<div class="wa-float-wrap">
+<!-- WhatsApp Message Card Popup -->
+<div class="wa-card" id="waCard" role="dialog" aria-label="Form Konsultasi WhatsApp">
+<div class="wa-card-head">
+<div>
+<b>Hubungi Kami via WhatsApp</b>
+<small>Respon Cepat Tim PT. Magali Jaya Abadi</small>
+</div>
+<button type="button" class="wa-card-close" id="waCardClose" aria-label="Tutup form">×</button>
+</div>
+<form class="wa-card-body" id="waForm">
+<div class="wa-field">
+<label for="waNama">Nama Lengkap *</label>
+<input type="text" id="waNama" placeholder="Nama Anda atau Perusahaan" required>
+</div>
+<div class="wa-field">
+<label for="waHp">Nomor WhatsApp / HP *</label>
+<input type="tel" id="waHp" placeholder="Contoh: 08123456789" required>
+</div>
+<div class="wa-field">
+<label for="waEmail">Alamat Email</label>
+<input type="email" id="waEmail" placeholder="nama@perusahaan.com">
+</div>
+<div class="wa-field">
+<label for="waLayanan">Layanan yang Dibutuhkan</label>
+<select id="waLayanan">
+<option value="Cleaning Service">Cleaning Service &amp; 5R</option>
+<option value="Business Process Outsourcing (BPO)">Business Process Outsourcing (BPO)</option>
+<option value="Security Service">Security Service / Satpam</option>
+<option value="Housekeeping">Housekeeping Hotel / Fasilitas</option>
+<option value="Gardener Service">Gardener Service / Lanskap</option>
+<option value="General Supplier">General Supplier</option>
+<option value="Parking Management">Parking Management</option>
+<option value="Konsultasi Umum">Konsultasi Umum Ketenagakerjaan</option>
+</select>
+</div>
+<div class="wa-field">
+<label for="waPesan">Pesan / Kebutuhan Fasilitas *</label>
+<textarea id="waPesan" placeholder="Tuliskan kebutuhan tenaga kerja, lokasi, atau pertanyaan Anda..." required></textarea>
+</div>
+<button type="submit" class="wa-submit-btn">
+<svg class="ic" style="width:18px;height:18px;fill:currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.79 14.07c-.24.68-1.2 1.25-1.68 1.33-.45.07-1.02.1-3-.72-2.38-.99-3.9-3.41-4.02-3.57-.12-.16-.96-1.28-.96-2.44 0-1.16.61-1.73.83-1.96.22-.24.48-.3.64-.3.16 0 .32 0 .46.01.15.01.35-.06.55.42.2.49.69 1.68.75 1.8.06.12.1.27.02.43-.08.16-.12.26-.24.4-.12.14-.25.32-.36.43-.12.12-.25.25-.11.49.14.24.63 1.04 1.35 1.68.93.83 1.71 1.09 1.95 1.21.24.12.38.1.52-.06.14-.16.61-.71.77-.96.16-.24.32-.2.55-.12.22.08 1.43.68 1.68.8.24.12.41.18.47.28.06.1.06.6-.18 1.28z"/></svg>
+Kirim Pesan ke WhatsApp
+</button>
+</form>
+</div>
+
+<!-- Floating Action Button -->
+<button type="button" class="wa-float-btn" id="waFloatBtn" aria-label="Buka form chat WhatsApp">
+<span class="pulse"></span>
+<svg class="wa-ic" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.79 14.07c-.24.68-1.2 1.25-1.68 1.33-.45.07-1.02.1-3-.72-2.38-.99-3.9-3.41-4.02-3.57-.12-.16-.96-1.28-.96-2.44 0-1.16.61-1.73.83-1.96.22-.24.48-.3.64-.3.16 0 .32 0 .46.01.15.01.35-.06.55.42.2.49.69 1.68.75 1.8.06.12.1.27.02.43-.08.16-.12.26-.24.4-.12.14-.25.32-.36.43-.12.12-.25.25-.11.49.14.24.63 1.04 1.35 1.68.93.83 1.71 1.09 1.95 1.21.24.12.38.1.52-.06.14-.16.61-.71.77-.96.16-.24.32-.2.55-.12.22.08 1.43.68 1.68.8.24.12.41.18.47.28.06.1.06.6-.18 1.28z"/></svg>
+<span class="label">Chat WhatsApp</span>
+</button>
+</div>
+
+<script>
+// GALLERY DATA & CATEGORY SLIDER SYSTEM
+const galleryData=[
+["img24","Cleaning Service"],["img25","Cleaning Service"],["img26","Cleaning Service"],["img27","Cleaning Service"],["img28","Cleaning Service"],["img29","Cleaning Service"],["img30","Cleaning Service"],["img31","Cleaning Service"],["img32","Cleaning Service"],["img33","Cleaning Service"],["img34","Cleaning Service"],["img35","Cleaning Service"],["img36","Cleaning Service"],["img37","Cleaning Service"],["img38","Cleaning Service"],["img39","Cleaning Service"],["img40","Cleaning Service"],["img41","Cleaning Service"],
+["img06","Gardener Service"],["img42","Gardener Service"],["img43","Gardener Service"],["img44","Gardener Service"],["img45","Gardener Service"],["img46","Gardener Service"],["img47","Gardener Service"],["img48","Gardener Service"],
+["img08","General Supplier"],["img49","General Supplier"],["img50","General Supplier"],["img51","General Supplier"],["img52","General Supplier"],["img53","General Supplier"],["img54","General Supplier"],["img55","General Supplier"],
+["img56","Parking"],["img57","Parking"],["img58","Parking"],["img59","Parking"]
+];
+
+let currentCat = "random";
+let currentSlide = 0;
+let currentItems = [];
+let autoSlideTimer = null;
+const ITEMS_PER_PAGE = 4;
+
+function shuffleArray(array) {
+  const arr = [...array];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+function updateGalleryDataset(cat) {
+  currentCat = cat;
+  currentSlide = 0;
+  if (cat === "random") {
+    currentItems = shuffleArray(galleryData);
+  } else if (cat === "all") {
+    currentItems = [...galleryData];
+  } else {
+    currentItems = galleryData.filter(g => g[1].toLowerCase() === cat.toLowerCase());
+  }
+  renderGallery();
+  restartAutoSlide();
+}
+
+function renderGallery() {
+  const gg = document.getElementById("galleryGrid");
+  const slideInfo = document.getElementById("slideInfo");
+  if (!gg) return;
+
+  const totalPages = Math.ceil(currentItems.length / ITEMS_PER_PAGE) || 1;
+  if (currentSlide >= totalPages) currentSlide = 0;
+  if (currentSlide < 0) currentSlide = totalPages - 1;
+
+  if (slideInfo) {
+    slideInfo.textContent = `Batch ${currentSlide + 1} / ${totalPages} (${currentItems.length} Foto)`;
+  }
+
+  const start = currentSlide * ITEMS_PER_PAGE;
+  const pageItems = currentItems.slice(start, start + ITEMS_PER_PAGE);
+
+  gg.classList.add("fade-out");
+  setTimeout(() => {
+    gg.innerHTML = "";
+    pageItems.forEach(g => {
+      const b = document.createElement("button");
+      b.type = "button";
+      b.className = "g-item";
+      b.dataset.img = "assets/" + g[0] + ".webp";
+      b.dataset.title = g[1];
+      b.setAttribute("aria-label", "Perbesar foto: " + g[1]);
+      b.innerHTML = '<img loading="lazy" src="assets/' + g[0] + '.webp" alt="' + g[1] + '"><span>' + g[1] + '</span>';
+      b.addEventListener("click", () => openLightbox(b.dataset.img, b.dataset.title));
+      gg.appendChild(b);
+    });
+    gg.classList.remove("fade-out");
+  }, 120);
+}
+
+function nextSlideAction() {
+  const totalPages = Math.ceil(currentItems.length / ITEMS_PER_PAGE) || 1;
+  currentSlide = (currentSlide + 1) % totalPages;
+  renderGallery();
+}
+
+function prevSlideAction() {
+  const totalPages = Math.ceil(currentItems.length / ITEMS_PER_PAGE) || 1;
+  currentSlide = (currentSlide - 1 + totalPages) % totalPages;
+  renderGallery();
+}
+
+function restartAutoSlide() {
+  clearInterval(autoSlideTimer);
+  // Auto-slide every 5 seconds for random / sliding experience
+  autoSlideTimer = setInterval(() => {
+    nextSlideAction();
+  }, 5000);
+}
+
+// Gallery Tab Click Listeners
+const tabBtns = document.querySelectorAll(".tab-btn");
+tabBtns.forEach(btn => {
+  btn.addEventListener("click", () => {
+    tabBtns.forEach(b => {
+      b.classList.remove("active");
+      b.classList.remove("tab-red");
+    });
+    btn.classList.add("active");
+    if (btn.dataset.cat === "random") btn.classList.add("tab-red");
+    updateGalleryDataset(btn.dataset.cat);
+  });
+});
+
+document.getElementById("nextSlide")?.addEventListener("click", () => {
+  nextSlideAction();
+  restartAutoSlide();
+});
+document.getElementById("prevSlide")?.addEventListener("click", () => {
+  prevSlideAction();
+  restartAutoSlide();
+});
+
+// Initialize Gallery with Random Sliding
+updateGalleryDataset("random");
+
+// LIGHTBOX MODAL
+const modal = document.getElementById("modal");
+const modalImg = document.getElementById("modalImg");
+const modalTitle = document.getElementById("modalTitle");
+const modalClose = document.querySelector(".modal-close");
+let lastTrigger = null;
+
+function openLightbox(src, title) {
+  if (!modal || !modalImg) return;
+  modalImg.src = src;
+  modalImg.alt = title;
+  if (modalTitle) modalTitle.textContent = title;
+  modal.classList.add("open");
+  modal.setAttribute("aria-hidden", "false");
+  document.body.classList.add("modal-open");
+  modalClose?.focus();
+}
+
+function closeLightbox() {
+  if (!modal) return;
+  modal.classList.remove("open");
+  modal.setAttribute("aria-hidden", "true");
+  document.body.classList.remove("modal-open");
+  if (lastTrigger) lastTrigger.focus();
+}
+
+modalClose?.addEventListener("click", closeLightbox);
+modal?.addEventListener("click", e => { if (e.target === modal) closeLightbox(); });
+
+// SERVICE DETAILS MODAL SYSTEM
+const serviceDetails = {
+  bpo: {
+    category: "Layanan Pemborongan Pekerjaan",
+    title: "Business Process Outsourcing (BPO)",
+    img: "assets/img04.webp",
+    desc: "Business Process Outsourcing (BPO) MJA adalah solusi pengalihan pekerjaan penunjang operasional perusahaan secara komprehensif. Melalui skema pemborongan ini, perusahaan mitra dapat sepenuhnya berkonsentrasi pada peningkatan profitabilitas dan bisnis inti, sementara seluruh kerumitan rekrutmen, administrasi, legalitas, dan pengelolaan pekerja ditangani oleh tenaga profesional kami.",
+    benefits: [
+      "Penghematan biaya operasional, rekrutmen, dan overhead HR hingga 30%.",
+      "Mitigasi risiko ketenagakerjaan, kepatuhan regulasi hukum, dan jaminan payroll tepat waktu.",
+      "Jaminan penggantian tenaga kerja dalam waktu maksimal 24 jam bila berhalangan.",
+      "Evaluasi Key Performance Indicator (KPI) dan pengawasan operasional berkala."
+    ],
+    sectors: ["Pabrik & Kawasan Industri", "Gedung Perkantoran", "Rumah Sakit & Klinik", "Hotel & Hospitality", "Pusat Perbelanjaan / Mall", "Instansi Pemerintah"]
+  },
+  cleaning: {
+    category: "Kebersihan & Higienitas",
+    title: "Cleaning Service & Metode 5R",
+    img: "assets/img24.webp",
+    desc: "Layanan kebersihan menyeluruh yang mencakup Daily Cleaning, Periodic Deep Cleaning, dan sanitasi area kerja. Setiap petugas dibekali teknik pembersihan modern serta menerapkan budaya kerja 5R (Ringkas, Rapih, Resik, Rawat, Rajin) agar area fasilitas selalu bersih, higienis, dan nyaman bagi produktivitas kerja.",
+    benefits: [
+      "Tenaga kerja tersertifikasi dengan pembekalan ASK (Attitude, Skills, Knowledge).",
+      "Peralatan modern lengkap (Floor Polisher, Auto Scrubber, Vacuum Cleaner Wet & Dry).",
+      "Penggunaan bahan kimia pembersih (chemical) ramah lingkungan bersertifikat MSDS.",
+      "Supervisi dan checklist mutu kebersihan harian yang terdokumentasi rapi."
+    ],
+    sectors: ["Perkantoran Korporat", "Pabrik Manufaktur", "Rumah Sakit & Farmasi", "Universitas & Sekolah", "Pusat Retail & Supermarket", "Fasilitas Perbankan"]
+  },
+  housekeeping: {
+    category: "Hospitalitas & Tata Graha",
+    title: "Housekeeping Service",
+    img: "assets/img05.webp",
+    desc: "Layanan tata graha profesional untuk menjaga estetika, higienitas, dan kesiapan kamar hunian serta seluruh area publik fasilitas komersial. Berorientasi pada standar bintang perhotelan guna memberikan impresi pertama yang berkelas kepada setiap tamu.",
+    benefits: [
+      "Penanganan menyeluruh Room Section (kamar tidur, kamar mandi, linen management).",
+      "Penanganan Public Area Section (lobby, koridor, ruang pertemuan, lounge).",
+      "Tenaga muda terampil dengan etika hospitality dan grooming standar perhotelan.",
+      "Kecepatan penyiapan unit kamar dengan kontrol kualitas sanitasi terukur."
+    ],
+    sectors: ["Hotel & Resort", "Apartemen & Kondominium", "Wisma Atlet & Mess Karyawan", "Fasilitas Co-living", "Clubhouse & Lounge"]
+  },
+  security: {
+    category: "Keamanan & Ketertiban",
+    title: "Security Service (Satpam Terlatih)",
+    img: "assets/img07.webp",
+    desc: "Penyediaan satuan pengamanan bersertifikat resmi Gada Pratama/Madya di bawah binaan instruktur profesional. Siaga 24 jam melindungi aset, karyawan, tamu, serta menjaga kelancaran operasional area kerja dari berbagai potensi ancaman.",
+    benefits: [
+      "Disiplin tinggi, berbadan sehat, serta pembawaan humanis dan tegas.",
+      "Sistem patroli rutin terjadwal dengan pelaporan mutasi buku dan digital.",
+      "Kesiapan tanggap darurat (K3, pemadaman api dini, evakuasi, pertolongan pertama).",
+      "Pengawasan ketat pos akses, pemeriksaan kendaraan masuk/keluar, dan monitoring CCTV."
+    ],
+    sectors: ["Kawasan Industri & Pergudangan", "Gedung Perkantoran", "Pusat Perbelanjaan / Retail", "Kampus & Sekolah", "Perumahan / Residensial"]
+  },
+  gardener: {
+    category: "Lanskap & Ruang Hijau",
+    title: "Gardener Service",
+    img: "assets/img42.webp",
+    desc: "Layanan perawatan dan penataan lanskap ruang hijau agar selalu asri, tertib, dan menyejukkan. Lingkungan kerja yang hijau dan terawat terbukti meningkatkan kenyamanan visual dan produktivitas karyawan.",
+    benefits: [
+      "Perawatan rutin: penyiraman teratur, pemupukan organik, pemangkasan dahan dan rumput.",
+      "Pencegahan dan pengendalian hama penyakit tanaman secara berkala.",
+      "Konsultasi penataan taman, pemilihan jenis flora hemat perawatan, dan revitalisasi lanskap.",
+      "Peralatan pemotong rumput dan perawatan kebun yang lengkap dan aman."
+    ],
+    sectors: ["Halaman Pabrik", "Taman Gedung Perkantoran", "Lanskap Kampus", "Taman Fasilitas Medis", "Hotel & Resort"]
+  },
+  supplier: {
+    category: "Pengadaan Kebutuhan Operasional",
+    title: "General Supplier",
+    img: "assets/img08.webp",
+    desc: "Penyediaan barang dan perlengkapan kerja untuk mendukung kelancaran operasional perusahaan skala kecil, menengah, hingga industri manufaktur besar dengan jaminan kualitas dan ketepatan jadwal pengiriman.",
+    benefits: [
+      "Pengadaan bahan kimia pembersih, chemical sanitasi, dan mesin cleaning.",
+      "Alat Pelindung Diri (APD) K3 (Safety shoes, helm, rompi, sarung tangan, masker).",
+      "Alat Tulis Kantor (ATK), kebutuhan pantry, hingga perlengkapan maintenance.",
+      "Harga kompetitif dengan sistem invoicing transparan dan termin pembayaran fleksibel."
+    ],
+    sectors: ["Perusahaan Swasta", "Badan Usaha Milik Negara (BUMN)", "Pabrik & Manufaktur", "Rumah Sakit", "Instansi Pendidikan"]
+  },
+  parking: {
+    category: "Manajemen Parkir",
+    title: "Parking Management",
+    img: "assets/img56.webp",
+    desc: "Pengelolaan sirkulasi, penataan tata letak, dan pengawasan area parkir kendaraan bermotor secara tertib, aman, dan efisien demi kenyamanan pengunjung fasilitas Anda.",
+    benefits: [
+      "Pengaturan arus keluar-masuk kendaraan untuk mencegah kemacetan di pintu gerbang.",
+      "Petugas parkir ramah, komunikatif, dan tanggap membantu mengarahkan kendaraan.",
+      "Pencatatan karcis dan sistem pengawasan kendaraan yang disiplin.",
+      "Penataan tata letak ruang parkir yang optimal untuk kapasitas maksimal."
+    ],
+    sectors: ["Gedung Komersial", "Rumah Sakit", "Pusat Perbelanjaan", "Kampus", "Pabrik & Kantor"]
+  }
+};
+
+const svcModal = document.getElementById("svcModal");
+const svcModalClose = document.querySelector(".svc-modal-close");
+const svcModalCloseBtn = document.getElementById("svcModalCloseBtn");
+
+function openServiceModal(key) {
+  const data = serviceDetails[key];
+  if (!data || !svcModal) return;
+
+  document.getElementById("svcModalTitle").textContent = data.title;
+  document.getElementById("svcModalCategory").textContent = data.category;
+  document.getElementById("svcModalImg").src = data.img;
+  document.getElementById("svcModalImg").alt = data.title;
+  document.getElementById("svcModalDesc").textContent = data.desc;
+
+  const benefitsUl = document.getElementById("svcModalBenefits");
+  benefitsUl.innerHTML = "";
+  data.benefits.forEach(b => {
+    const li = document.createElement("li");
+    li.textContent = b;
+    benefitsUl.appendChild(li);
+  });
+
+  const sectorsWrap = document.getElementById("svcModalSectors");
+  sectorsWrap.innerHTML = "";
+  data.sectors.forEach(s => {
+    const span = document.createElement("span");
+    span.className = "chip";
+    span.textContent = s;
+    sectorsWrap.appendChild(span);
+  });
+
+  const waBtn = document.getElementById("svcModalWaBtn");
+  const msg = encodeURIComponent(`Halo PT. Magali Jaya Abadi,\n\nSaya tertarik dengan layanan *${data.title}*.\nMohon informasi penawaran dan jadwal survei lokasi. Terima kasih.`);
+  waBtn.href = `https://wa.me/6281281184882?text=${msg}`;
+
+  svcModal.classList.add("open");
+  svcModal.setAttribute("aria-hidden", "false");
+  document.body.classList.add("modal-open");
+}
+
+function closeServiceModal() {
+  if (!svcModal) return;
+  svcModal.classList.remove("open");
+  svcModal.setAttribute("aria-hidden", "true");
+  document.body.classList.remove("modal-open");
+}
+
+document.querySelectorAll(".svc-card").forEach(card => {
+  card.addEventListener("click", () => {
+    const key = card.dataset.svc;
+    if (key) openServiceModal(key);
+  });
+  card.addEventListener("keydown", e => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      const key = card.dataset.svc;
+      if (key) openServiceModal(key);
+    }
+  });
+});
+
+svcModalClose?.addEventListener("click", closeServiceModal);
+svcModalCloseBtn?.addEventListener("click", closeServiceModal);
+svcModal?.addEventListener("click", e => {
+  if (e.target === svcModal) closeServiceModal();
+});
+
+// FLOATING WHATSAPP FORM SYSTEM
+const waFloatBtn = document.getElementById("waFloatBtn");
+const waCard = document.getElementById("waCard");
+const waCardClose = document.getElementById("waCardClose");
+const waForm = document.getElementById("waForm");
+
+if (waFloatBtn && waCard) {
+  waFloatBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    const isOpen = waCard.classList.contains("open");
+    waCard.classList.toggle("open", !isOpen);
+    if (!isOpen) {
+      document.getElementById("waNama")?.focus();
+    }
+  });
+
+  waCardClose?.addEventListener("click", (e) => {
+    e.stopPropagation();
+    waCard.classList.remove("open");
+  });
+
+  document.addEventListener("click", (e) => {
+    if (waCard.classList.contains("open") && !waCard.contains(e.target) && !waFloatBtn.contains(e.target)) {
+      waCard.classList.remove("open");
+    }
+  });
+}
+
+if (waForm) {
+  waForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const nama = document.getElementById("waNama").value.trim();
+    const hp = document.getElementById("waHp").value.trim();
+    const email = document.getElementById("waEmail").value.trim();
+    const layanan = document.getElementById("waLayanan").value;
+    const pesan = document.getElementById("waPesan").value.trim();
+
+    const formattedMessage =
+`Halo PT. Magali Jaya Abadi,
+Saya ingin berkonsultasi mengenai layanan facility care:
+
+*Nama*: ${nama}
+*No. WhatsApp/HP*: ${hp}
+*Email*: ${email || '-'}
+*Layanan yang Diminati*: ${layanan}
+
+*Kebutuhan / Pesan*:
+${pesan}
+
+Mohon informasi dan tindak lanjutnya. Terima kasih.`;
+
+    const encoded = encodeURIComponent(formattedMessage);
+    const waUrl = `https://wa.me/6281281184882?text=${encoded}`;
+    window.open(waUrl, "_blank");
+
+    waCard.classList.remove("open");
+    waForm.reset();
+  });
+}
+
+// Mobile Navigation Toggle
+const menuButton=document.querySelector(".menu"),nav=document.querySelector(".navlinks");
+const closeNav=()=>{
+  if(!nav||!menuButton)return;
+  nav.classList.remove("open");
+  menuButton.setAttribute("aria-expanded","false");
+};
+if(menuButton&&nav){
+  menuButton.addEventListener("click",()=>{
+    const open=!nav.classList.contains("open");
+    nav.classList.toggle("open",open);
+    menuButton.setAttribute("aria-expanded",String(open));
+  });
+}
+nav&&nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",closeNav));
+document.addEventListener("click",e=>{
+  if(nav&&menuButton&&nav.classList.contains("open")&&!nav.contains(e.target)&&!menuButton.contains(e.target))closeNav();
+});
+
+// Global Escape Key Listener
+document.addEventListener("keydown",e=>{
+  if(e.key==="Escape"){
+    closeLightbox();
+    closeServiceModal();
+    closeNav();
+    waCard?.classList.remove("open");
+  }
+});
+</script>
+
+<!-- Version Switcher Tool -->
+<style>
+.vswitch{position:fixed;right:18px;bottom:18px;z-index:90;display:flex;align-items:center;gap:6px;background:rgba(7,21,39,.94);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:6px 8px 6px 14px;box-shadow:0 12px 30px rgba(0,0,0,.35)}
+.vswitch>span{color:#c9d6e8;font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.vswitch a{display:grid;place-items:center;min-width:32px;height:32px;padding:0 8px;border-radius:999px;color:#fff;font-size:13px;font-weight:800;background:rgba(255,255,255,.1);transition:background .15s ease}
+.vswitch a:hover{background:rgba(255,255,255,.22)}
+.vswitch a.active{background:var(--red,#c52639);box-shadow:0 6px 16px rgba(197,38,57,.4)}
+@media(max-width:600px){.vswitch{right:12px;bottom:12px;padding:5px 6px 5px 12px}.vswitch>span{display:none}.vswitch a{min-width:30px;height:30px}}
+@media print{.vswitch{display:none}}
+</style>
+<div class="vswitch" role="navigation" aria-label="Pilih versi halaman">
+<span>Versi</span>
+<a href="index.html" data-v="1" aria-label="Versi 1 - klasik" title="Versi 1 — Klasik">1</a>
+<a href="index2.html" data-v="2" aria-label="Versi 2 - terang" title="Versi 2 — Terang">2</a>
+<a href="index3.html" data-v="3" aria-label="Versi 3 - gelap" title="Versi 3 — Gelap">3</a>
+</div>
+<script>
+(function(){
+  var f=(location.pathname.split("/").pop()||"index.html").toLowerCase();
+  var v=f==="index2.html"?"2":f==="index3.html"?"3":"1";
+  document.querySelectorAll(".vswitch a").forEach(function(a){
+    var on=a.getAttribute("data-v")===v;
+    a.classList.toggle("active",on);
+    if(on)a.setAttribute("aria-current","page");
+  });
+})();
+</script>
+</body></html>

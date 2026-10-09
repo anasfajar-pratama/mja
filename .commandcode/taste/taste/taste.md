@@ -1,0 +1,11 @@
+# Taste
+- Communicates in Indonesian (Bahasa Indonesia) and expects replies in the same language. Confidence: 0.8
+- Places task instructions/commands in a dedicated notes file in the project (e.g. `catatan.md`) and asks the agent to read it before acting; expects the agent to re-read that file once he confirms he has saved it. Confidence: 0.8
+- Evaluates UI work by visual/design quality: prefers modern, elegant visual depth over monotonous flat section backgrounds while keeping content informative; expects images and elements to sit fully inside containers, sized proportionally ("ideal dan proporsional"), maintains clean vertical rhythm, and flags overflow/misalignment/overlapping ("floating") elements as bugs. Confidence: 0.65
+- Cares about mobile-responsiveness and specifically requests CSS/layout tuning for mobile views ("tampilan ponsel"), ensuring touch-friendly sizes, proper grid columns, and no awkward cropping on small screens. Confidence: 0.75
+- For business/landing pages, favors interactive disclosure and quick-contact elements (e.g., detail modals for service cards, category tabs with sliding gallery batches, and fixed floating WhatsApp CTAs with structured inquiry forms) to maintain clean aesthetics without sacrificing depth. Confidence: 0.7
+- Prefers a Laravel (PHP) backend with a React frontend for turning a static page into a full application/CMS; explicitly requests this stack. Confidence: 0.8
+- Prefers Vite + React + TypeScript over plain JavaScript for React projects. Confidence: 0.6
+- Prefers preserving existing hand-written CSS to keep the design pixel-identical rather than rewriting styles into a utility framework like Tailwind. Confidence: 0.55
+- Prefers MySQL (as provided by his XAMPP setup) as the database for PHP projects. Confidence: 0.55
+- Prefers full content management: when building a CMS, wants all content/scalars editable (CRUD + image upload) rather than partially hardcoded. Confidence: 0.6

@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Shell(dir /s /b catatan.md 2>nul & echo --- & powershell -NoProfile -Command \"Get-Item 'C:\\Users\\USER\\Downloads\\PT_Magali_Jaya_Abadi_Website_updated\\PT_Magali_Jaya_Abadi_Website\\catatan.md' | Select-Object Length,LastWriteTime | Format-List\")",
+      "powershell"
+    ],
+    "deny": [],
+    "defaultMode": "default"
+  }
+}
