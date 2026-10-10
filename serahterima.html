@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Surat Serah Terima Proyek – KebunKode</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Times+New+Roman&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 12pt;
+      color: #000;
+      background: #e5e5e5;
+    }
+
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 20px auto;
+      background: #fff;
+      padding: 20mm 25mm 20mm 25mm;
+      box-shadow: 0 0 12px rgba(0,0,0,0.2);
+    }
+
+    /* ─── HEADER ─────────────────────────────────────────── */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      border-bottom: 3px solid #1a5276;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+    }
+
+    .logo-circle {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: #1a5276;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .logo-circle span {
+      color: #fff;
+      font-size: 13pt;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .header-text h1 {
+      font-size: 18pt;
+      font-weight: bold;
+      color: #1a5276;
+      letter-spacing: 1px;
+    }
+
+    .header-text p {
+      font-size: 9pt;
+      color: #444;
+      margin-top: 2px;
+      line-height: 1.5;
+    }
+
+    .sub-header {
+      text-align: right;
+      font-size: 9pt;
+      color: #555;
+      margin-bottom: 18px;
+      line-height: 1.6;
+    }
+
+    /* ─── META INFO ──────────────────────────────────────── */
+    .meta-table {
+      width: 100%;
+      margin-bottom: 16px;
+    }
+
+    .meta-table td {
+      padding: 2px 0;
+      vertical-align: top;
+      font-size: 11pt;
+    }
+
+    .meta-table td:first-child {
+      width: 110px;
+      font-weight: normal;
+    }
+
+    .meta-table td:nth-child(2) {
+      width: 10px;
+      padding: 0 4px;
+    }
+
+    /* ─── PERIHAL BLOCK ──────────────────────────────────── */
+    .to-block {
+      margin-bottom: 16px;
+      font-size: 11pt;
+      line-height: 1.8;
+    }
+
+    /* ─── TITLE ──────────────────────────────────────────── */
+    .letter-title {
+      text-align: center;
+      font-size: 13pt;
+      font-weight: bold;
+      text-decoration: underline;
+      text-transform: uppercase;
+      margin: 16px 0 14px;
+      letter-spacing: 0.5px;
+    }
+
+    /* ─── BODY PARAGRAPHS ────────────────────────────────── */
+    .body p {
+      font-size: 11pt;
+      line-height: 1.8;
+      text-align: justify;
+      margin-bottom: 10px;
+    }
+
+    /* ─── DELIVERABLE TABLE ──────────────────────────────── */
+    .deliverables-title {
+      font-size: 11pt;
+      font-weight: bold;
+      margin: 14px 0 6px;
+    }
+
+    table.deliverables {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 10.5pt;
+      margin-bottom: 14px;
+    }
+
+    table.deliverables th {
+      background: #1a5276;
+      color: #fff;
+      padding: 6px 8px;
+      text-align: center;
+      border: 1px solid #1a5276;
+    }
+
+    table.deliverables td {
+      border: 1px solid #aac;
+      padding: 5px 8px;
+      vertical-align: top;
+    }
+
+    table.deliverables tr:nth-child(even) td {
+      background: #edf3fb;
+    }
+
+    /* ─── PAYMENT TABLE ──────────────────────────────────── */
+    table.payment {
+      width: 60%;
+      margin: 8px 0 14px auto;
+      border-collapse: collapse;
+      font-size: 11pt;
+    }
+
+    table.payment td {
+      padding: 5px 10px;
+      border: 1px solid #aac;
+    }
+
+    table.payment tr:last-child td {
+      font-weight: bold;
+      background: #fff3cd;
+    }
+
+    table.payment td:last-child {
+      text-align: right;
+    }
+
+    /* ─── SIGNATURE ──────────────────────────────────────── */
+    .signature-section {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 28px;
+      font-size: 11pt;
+    }
+
+    .sig-block {
+      text-align: center;
+      width: 42%;
+    }
+
+    .sig-block .sig-line {
+      margin-top: 52px;
+      border-top: 1px solid #000;
+      padding-top: 4px;
+    }
+
+    .sig-block .sig-title {
+      font-size: 10pt;
+      color: #444;
+    }
+
+    /* ─── FOOTER ─────────────────────────────────────────── */
+    .footer {
+      margin-top: 30px;
+      border-top: 2px solid #1a5276;
+      padding-top: 8px;
+      text-align: center;
+      font-size: 8.5pt;
+      color: #666;
+    }
+
+    /* ─── PRINT ──────────────────────────────────────────── */
+    @media print {
+      body { background: #fff; }
+      .page {
+        margin: 0;
+        padding: 15mm 20mm;
+        box-shadow: none;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- ══════════ KOP SURAT ══════════ -->
+  <div class="header">
+    <div class="logo-circle"><span>KK</span></div>
+    <div class="header-text">
+      <h1>KEBUNKODE</h1>
+      <p>Jasa Teknologi Informasi &amp; Pengembangan Website Profesional</p>
+    </div>
+  </div>
+  <div class="sub-header">
+    Email: info@kebunkode.com &nbsp;|&nbsp; Telp: 0813 18 988 499 &nbsp;|&nbsp; Website: www.kebunkode.com<br/>
+    Alamat: Kebun Kembang Asri Blok C2/3a, Sarimulya Kotabaru Karawang – Jawa Barat
+  </div>
+
+  <!-- ══════════ META ══════════ -->
+  <table class="meta-table">
+    <tr><td>No. Surat</td><td>:</td><td>BAST/KK/VII/2026/001</td></tr>
+    <tr><td>Tanggal</td><td>:</td><td>27 Juli 2026</td></tr>
+    <tr><td>Lampiran</td><td>:</td><td>1 (satu) berkas</td></tr>
+    <tr><td>Perihal</td><td>:</td><td><strong>Berita Acara Serah Terima Proyek Pembuatan Website Skincare</strong></td></tr>
+  </table>
+
+  <!-- ══════════ TUJUAN ══════════ -->
+  <div class="to-block">
+    Kepada Yth.<br/>
+    <strong>Ibu Ranti Isnaya Tari</strong><br/>
+    CV Rindang Cemara Sukses<br/>
+    Jl. Cicalengka Raya No. 48-A, Kel. Antapani Kidul,<br/>
+    Kec. Antapani, Kota Bandung, Jawa Barat<br/>
+    di Tempat
+  </div>
+
+  <!-- ══════════ JUDUL ══════════ -->
+  <div class="letter-title">Berita Acara Serah Terima Proyek</div>
+
+  <!-- ══════════ ISI ══════════ -->
+  <div class="body">
+    <p>Dengan hormat,</p>
+
+    <p>
+      Merujuk pada Surat Penawaran Jasa No. <strong>SP/KK/VI/2026/001</strong> tertanggal 18 Juni 2026 dan
+      perjanjian kerja sama yang telah disepakati bersama, kami dari <strong>CV KebunKode</strong> dengan ini
+      menyampaikan bahwa seluruh pekerjaan <em>Pembuatan Website Produk Skincare</em> untuk
+      <strong>CV Rindang Cemara Sukses</strong> telah <strong>selesai dikerjakan</strong> dan siap diserahterimakan.
+    </p>
+
+    <p>
+      Berikut adalah daftar hasil pekerjaan yang kami serahkan kepada pihak klien:
+    </p>
+
+    <!-- deliverables -->
+    <div class="deliverables-title">Daftar Hasil Pekerjaan yang Diserahkan:</div>
+    <table class="deliverables">
+      <thead>
+        <tr>
+          <th style="width:5%">No.</th>
+          <th style="width:35%">Item Pekerjaan</th>
+          <th style="width:40%">Keterangan</th>
+          <th style="width:20%">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align:center">1</td>
+          <td>Desain &amp; Pengembangan Website</td>
+          <td>Desain UI/UX responsif; halaman Utama, Tentang Kami, Produk, Keunggulan, Kontak, dan Halaman Admin.</td>
+          <td style="text-align:center; color:#1a5276; font-weight:bold">✔ Selesai</td>
+        </tr>
+        <tr>
+          <td style="text-align:center">2</td>
+          <td>Katalog Produk Skincare (3 Kategori)</td>
+          <td>Kategori Wanita, Pria, dan Anak; dilengkapi fitur filter, pencarian, dan halaman detail produk (foto, deskripsi, bahan, cara pakai).</td>
+          <td style="text-align:center; color:#1a5276; font-weight:bold">✔ Selesai</td>
+        </tr>
+        <tr>
+          <td style="text-align:center">3</td>
+          <td>Fitur Generate Barcode Kemasan</td>
+          <td>Sistem generate QR Code / Barcode otomatis per produk; scan barcode terhubung ke halaman detail produk di website.</td>
+          <td style="text-align:center; color:#1a5276; font-weight:bold">✔ Selesai</td>
+        </tr>
+        <tr>
+          <td style="text-align:center">4</td>
+          <td>Konten CTA (Call to Action)</td>
+          <td>Banner promosi, tombol beli/hubungi, pop-up penawaran, dan integrasi WhatsApp/marketplace.</td>
+          <td style="text-align:center; color:#1a5276; font-weight:bold">✔ Selesai</td>
+        </tr>
+        <tr>
+          <td style="text-align:center">5</td>
+          <td>Deploy, Hosting &amp; Domain</td>
+          <td>Setup server, konfigurasi hosting, registrasi domain pilihan klien, SSL certificate, dan backup otomatis (masa aktif 1 tahun).</td>
+          <td style="text-align:center; color:#1a5276; font-weight:bold">✔ Selesai</td>
+        </tr>
+        <tr>
+          <td style="text-align:center">6</td>
+          <td>Training &amp; Dokumentasi</td>
+          <td>Pelatihan penggunaan admin panel, panduan update produk, dan dokumentasi teknis website.</td>
+          <td style="text-align:center; color:#1a5276; font-weight:bold">✔ Selesai</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      Seluruh fitur dan ruang lingkup pekerjaan sebagaimana tercantum dalam surat penawaran telah
+      diselesaikan sesuai spesifikasi yang disepakati dan telah melalui proses pengujian (testing)
+      sehingga siap untuk dioperasikan secara penuh.
+    </p>
+
+    <!-- payment -->
+    <p>
+      Sehubungan dengan selesainya proyek ini, kami dengan hormat mengajukan tagihan
+      <strong>pelunasan pembayaran</strong> sebesar <strong>50% dari total nilai proyek</strong>, dengan rincian sebagai berikut:
+    </p>
+
+    <table class="payment">
+      <tr>
+        <td>Total Nilai Proyek</td>
+        <td>Rp 8.300.000</td>
+      </tr>
+      <tr>
+        <td>DP yang telah dibayar (50%)</td>
+        <td>Rp 4.150.000</td>
+      </tr>
+      <tr>
+        <td>Sisa Pelunasan (50%)</td>
+        <td>Rp 4.150.000</td>
+      </tr>
+    </table>
+
+    <p>
+      Pembayaran pelunasan dapat ditransfer ke rekening berikut:
+    </p>
+    <p style="margin-left: 20px; line-height:2;">
+      Bank &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <strong>[Nama Bank]</strong><br/>
+      No. Rekening &nbsp;: <strong>[Nomor Rekening]</strong><br/>
+      Atas Nama &nbsp;&nbsp;&nbsp;: <strong>[Nama Pemilik Rekening]</strong>
+    </p>
+
+    <!-- warranty -->
+    <div class="deliverables-title" style="margin-top:14px;">Ketentuan Garansi &amp; Pemeliharaan Pasca-Serah Terima:</div>
+    <table class="deliverables" style="margin-bottom:14px;">
+      <thead>
+        <tr>
+          <th style="width:5%">No.</th>
+          <th style="width:30%">Ketentuan</th>
+          <th>Keterangan</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align:center">1</td>
+          <td>Garansi Perbaikan Bug</td>
+          <td>CV KebunKode memberikan garansi perbaikan bug (kesalahan sistem/teknis) selama <strong>3 (tiga) bulan</strong> terhitung sejak tanggal serah terima ini, tanpa biaya tambahan.</td>
+        </tr>
+        <tr>
+          <td style="text-align:center">2</td>
+          <td>Free Maintenance</td>
+          <td>Layanan pemeliharaan gratis selama 3 bulan mencakup: pemantauan performa website, perbaikan error/bug, dan pembaruan keamanan dasar.</td>
+        </tr>
+        <tr>
+          <td style="text-align:center">3</td>
+          <td>Di Luar Cakupan Garansi</td>
+          <td>Penambahan fitur baru, perubahan desain signifikan, atau penambahan konten produk merupakan pekerjaan di luar garansi dan akan dibuatkan penawaran terpisah.</td>
+        </tr>
+        <tr>
+          <td style="text-align:center">4</td>
+          <td>Masa Berlaku Garansi</td>
+          <td>Garansi berlaku mulai tanggal <strong>27 Juli 2026</strong> s.d. <strong>27 Oktober 2026</strong>.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      Kami mohon konfirmasi penerimaan hasil pekerjaan ini serta pembayaran pelunasan dapat
+      diselesaikan dalam waktu <strong>7 (tujuh) hari kerja</strong> sejak surat ini diterima.
+      Apabila Ibu membutuhkan penjelasan lebih lanjut atau terdapat hal yang perlu didiskusikan,
+      kami sangat terbuka untuk berkoordinasi kembali.
+    </p>
+
+    <p>
+      Demikian surat serah terima ini kami sampaikan. Atas kepercayaan dan kerja sama yang baik
+      selama ini, kami mengucapkan terima kasih yang sebesar-besarnya. Semoga website yang telah
+      kami bangun dapat memberikan manfaat nyata bagi pertumbuhan bisnis skincare Ibu.
+    </p>
+  </div>
+
+  <!-- ══════════ TANDA TANGAN ══════════ -->
+  <div class="signature-section">
+    <!-- pihak pertama -->
+    <div class="sig-block">
+      <div>Diserahkan oleh,</div>
+      <div>CV KebunKode</div>
+      <div class="sig-line">
+        <strong>Anas Fajar Pratama</strong><br/>
+        <span class="sig-title">Pimpinan</span>
+      </div>
+    </div>
+
+    <!-- pihak kedua -->
+    <div class="sig-block">
+      <div>Diterima oleh,</div>
+      <div>CV Rindang Cemara Sukses</div>
+      <div class="sig-line">
+        <strong>Ranti Isnaya Tari</strong><br/>
+        <span class="sig-title">Pimpinan / Perwakilan</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <div class="footer">
+    CV KebunKode — Jasa Teknologi Informasi &amp; Pengembangan Website &nbsp;|&nbsp;
+    www.kebunkode.com &nbsp;|&nbsp; info@kebunkode.com &nbsp;|&nbsp; 0813 18 988 499
+  </div>
+
+</div>
+</body>
+</html>

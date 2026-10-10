@@ -121,6 +121,16 @@ h2 .hl,h1 .hl{color:var(--red2)}
 .hero-dot{width:9px;height:9px;border-radius:999px;border:0;padding:0;cursor:pointer;background:rgba(120,138,160,.55);transition:width .25s ease,background .25s ease}
 .hero-dot.active{width:26px;background:var(--red)}
 
+/* Dark hero — decorative variation (logo colours: navy, red, cyan) */
+.hero-slide.dark{overflow:hidden}
+.hero-slide.dark .hero-deco{z-index:0}
+.deco-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(130,185,240,.10) 1px,transparent 1px),linear-gradient(90deg,rgba(130,185,240,.10) 1px,transparent 1px);background-size:54px 54px;-webkit-mask-image:radial-gradient(ellipse at 62% 42%,#000 0%,transparent 76%);mask-image:radial-gradient(ellipse at 62% 42%,#000 0%,transparent 76%)}
+.deco-beam{position:absolute;top:-45%;right:6%;width:44%;height:195%;background:linear-gradient(180deg,rgba(56,189,248,.18) 0%,rgba(56,189,248,0) 68%);transform:rotate(16deg)}
+.deco-beam::after{content:"";position:absolute;top:0;left:-70px;width:2px;height:100%;background:linear-gradient(180deg,rgba(229,29,50,.45),rgba(229,29,50,0) 70%)}
+.deco-dots{position:absolute;left:0;right:0;bottom:0;height:46%;background-image:radial-gradient(rgba(255,255,255,.10) 1.5px,transparent 1.6px);background-size:26px 26px;-webkit-mask-image:linear-gradient(0deg,#000,transparent);mask-image:linear-gradient(0deg,#000,transparent)}
+.hero-slide.dark .deco-tl{opacity:.18}
+.hero-slide.dark .deco-br{opacity:.22}
+
 /* Dark Theme Sections with Combined Light Blue & Red Atmosphere */
 .dark-sec{background:radial-gradient(circle at 90% 15%,rgba(43,134,217,.25) 0%,transparent 45%),radial-gradient(circle at 12% 85%,rgba(197,38,57,.18) 0%,transparent 45%),radial-gradient(ellipse at 50% 0%,#153664 0%,#0b1d38 55%,#05101f 100%);color:#fff;border-top:1px solid rgba(255,255,255,.07);border-bottom:1px solid rgba(255,255,255,.07)}
 .dark-sec h2,.dark-sec h3{color:#fff}

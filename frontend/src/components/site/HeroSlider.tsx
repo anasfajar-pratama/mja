@@ -33,6 +33,16 @@ export default function HeroSlider({ slides }: { slides: HeroSlide[] }) {
       <div className="hero-slides">
         {slides.map((slide, idx) => (
           <div key={slide.id} className={`hero-slide ${slide.variant}${idx === active ? ' active' : ''}`}>
+            {slide.variant === 'dark' && (
+              <div className="hero-deco" aria-hidden="true">
+                <span className="deco-chevron deco-tl" />
+                <span className="deco-chevron deco-br" />
+                <span className="deco-grid" />
+                <span className="deco-beam" />
+                <span className="deco-dots" />
+              </div>
+            )}
+
             {slide.variant === 'light' && (
               <div className="hero-deco" aria-hidden="true">
                 <span className="deco-chevron deco-tl" />

@@ -1,7 +1,9 @@
 # Taste
 - Communicates in Indonesian (Bahasa Indonesia) and expects replies in the same language. Confidence: 0.8
+- Uses casual, informal Indonesian with playful slang (e.g. addressing the agent as "gaes") and is comfortable with a lighthearted, conversational tone in replies. Confidence: 0.5
+- Reports problems tersely by pasting the raw error/console output (e.g. a single Vite proxy error line) without further explanation, expecting the agent to diagnose the root cause itself. Confidence: 0.5
 - Places task instructions/commands in a dedicated notes file in the project (e.g. `catatan.md`) and asks the agent to read it before acting; expects the agent to re-read that file once he confirms he has saved it. Confidence: 0.8
-- Evaluates UI work by visual/design quality: prefers modern, elegant visual depth over monotonous flat section backgrounds while keeping content informative; expects images and elements to sit fully inside containers, sized proportionally ("ideal dan proporsional"), maintains clean vertical rhythm, and flags overflow/misalignment/overlapping ("floating") elements as bugs. Confidence: 0.65
+- Evaluates UI work by visual/design quality: prefers modern, elegant visual depth over monotonous flat section backgrounds while keeping content informative; expects images and elements to sit fully inside containers, sized proportionally ("ideal dan proporsional"), maintains clean vertical rhythm, and flags overflow/misalignment/overlapping ("floating") elements as bugs. Confidence: 0.7
 - Cares about mobile-responsiveness and specifically requests CSS/layout tuning for mobile views ("tampilan ponsel"), ensuring touch-friendly sizes, proper grid columns, and no awkward cropping on small screens. Confidence: 0.75
 - For business/landing pages, favors interactive disclosure and quick-contact elements (e.g., detail modals for service cards, category tabs with sliding gallery batches, and fixed floating WhatsApp CTAs with structured inquiry forms) to maintain clean aesthetics without sacrificing depth. Confidence: 0.7
 - Prefers a Laravel (PHP) backend with a React frontend for turning a static page into a full application/CMS; explicitly requests this stack. Confidence: 0.8
@@ -9,3 +11,11 @@
 - Prefers preserving existing hand-written CSS to keep the design pixel-identical rather than rewriting styles into a utility framework like Tailwind. Confidence: 0.55
 - Prefers MySQL (as provided by his XAMPP setup) as the database for PHP projects. Confidence: 0.55
 - Prefers full content management: when building a CMS, wants all content/scalars editable (CRUD + image upload) rather than partially hardcoded. Confidence: 0.6
+- Wants business/deliverable documents (e.g., surat penawaran, serah terima) produced as standalone, self-contained, print-ready HTML (A4 page, formal serif typography, table-based pricing/terms) rather than other formats like PDF or docx. Confidence: 0.6
+- Expects new documents to reuse the letterhead/branding of existing project documents — explicitly asks to match the "kop" (header logo, company name, tagline, contact line) of an existing file. Confidence: 0.6
+- Keeps decorative/background styling on-brand: when a section looks flat, wants the added variation (grids, beams, glows, accents) to be built from the company logo's color palette as the baseline ("baseline color seperti pada logo") rather than arbitrary colors. Confidence: 0.55
+- In client-facing quotations (penawaran), prefers a single prominent total price instead of a per-item price breakdown in the feature table; itemized rows should carry non-price value instead (e.g. estimated duration/output) while the total is called out separately. Confidence: 0.6
+- Wants his personal handwriting-style digital signature embedded into the signature block of client-facing documents (e.g. surat penawaran) rather than leaving it blank for a wet signature. Confidence: 0.5
+- Expects logo/icon image assets to be cleaned and transparent — dislikes flat-colored (e.g. gray) background boxes behind a logo and wants them removed so it renders cleanly on white, dark, and colored surfaces alike. Confidence: 0.55
+- Wants deployment/implementation instructions delivered as a standalone Markdown document in the project (e.g. `implementasi.md`), written step-by-step and tailored to the specific host rather than generic. Confidence: 0.55
+- Targets a shared-host deployment (Hostinger) for his Laravel + React apps, with the frontend pre-built so the server needs only PHP + MySQL (no Node.js). Confidence: 0.55

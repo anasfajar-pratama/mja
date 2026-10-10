@@ -83,3 +83,17 @@ Semua gambar di-upload lewat panel (tersimpan di `storage/app/public/media`, dis
 - **Tampilan situs**: CSS ada di `frontend/src/styles/site.css` (diambil apa adanya dari `index3.html`).
 - **Tampilan admin**: `frontend/src/styles/admin.css`.
 - **Ganti nomor WhatsApp**: menu Pengaturan Situs (`contact.whatsapp_number`).
+
+## Troubleshooting dev
+- **`[vite] http proxy error: /storage/...` atau `/api/...`** → artinya **backend Laravel belum jalan**. Vite hanya mem-proxy `/api` dan `/storage` ke `http://127.0.0.1:8000`. Jalankan backend:
+  ```powershell
+  cd backend
+  php artisan serve
+  ```
+- **Gambar tidak muncul padahal backend jalan** → pastikan symlink dan file ada:
+  ```powershell
+  php artisan storage:link
+  # file ada di: backend/storage/app/public/media
+  ```
+- **Jalankan keduanya sekaligus**: `./start-dev.ps1` (membuka dua jendela: Laravel + Vite).
+- Pastikan **MySQL XAMPP menyala** (kalau mati, `/api/site` akan error 500).

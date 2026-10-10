@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Surat Penawaran – Website CMS PT. Magali Jaya Abadi</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Times+New+Roman&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 12pt;
+      color: #000;
+      background: #e5e5e5;
+    }
+
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 20px auto;
+      background: #fff;
+      padding: 20mm 25mm 20mm 25mm;
+      box-shadow: 0 0 12px rgba(0,0,0,0.2);
+    }
+
+    /* ─── HEADER ─────────────────────────────────────────── */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      border-bottom: 3px solid #1a5276;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+    }
+
+    .logo-circle {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: #1a5276;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .logo-circle span {
+      color: #fff;
+      font-size: 13pt;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .header-text h1 {
+      font-size: 18pt;
+      font-weight: bold;
+      color: #1a5276;
+      letter-spacing: 1px;
+    }
+
+    .header-text p {
+      font-size: 9pt;
+      color: #444;
+      margin-top: 2px;
+      line-height: 1.5;
+    }
+
+    .sub-header {
+      text-align: right;
+      font-size: 9pt;
+      color: #555;
+      margin-bottom: 18px;
+      line-height: 1.6;
+    }
+
+    /* ─── META INFO ──────────────────────────────────────── */
+    .meta-table {
+      width: 100%;
+      margin-bottom: 16px;
+    }
+
+    .meta-table td {
+      padding: 2px 0;
+      vertical-align: top;
+      font-size: 11pt;
+    }
+
+    .meta-table td:first-child {
+      width: 110px;
+      font-weight: normal;
+    }
+
+    .meta-table td:nth-child(2) {
+      width: 10px;
+      padding: 0 4px;
+    }
+
+    /* ─── PERIHAL BLOCK ──────────────────────────────────── */
+    .to-block {
+      margin-bottom: 16px;
+      font-size: 11pt;
+      line-height: 1.8;
+    }
+
+    /* ─── TITLE ──────────────────────────────────────────── */
+    .letter-title {
+      text-align: center;
+      font-size: 13pt;
+      font-weight: bold;
+      text-decoration: underline;
+      text-transform: uppercase;
+      margin: 16px 0 14px;
+      letter-spacing: 0.5px;
+    }
+
+    /* ─── BODY PARAGRAPHS ────────────────────────────────── */
+    .body p {
+      font-size: 11pt;
+      line-height: 1.8;
+      text-align: justify;
+      margin-bottom: 10px;
+    }
+
+    /* ─── DELIVERABLE TABLE ──────────────────────────────── */
+    .deliverables-title {
+      font-size: 11pt;
+      font-weight: bold;
+      margin: 14px 0 6px;
+    }
+
+    table.deliverables {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 10.5pt;
+      margin-bottom: 14px;
+    }
+
+    table.deliverables th {
+      background: #1a5276;
+      color: #fff;
+      padding: 6px 8px;
+      text-align: center;
+      border: 1px solid #1a5276;
+    }
+
+    table.deliverables td {
+      border: 1px solid #aac;
+      padding: 5px 8px;
+      vertical-align: top;
+    }
+
+    table.deliverables tr:nth-child(even) td {
+      background: #edf3fb;
+    }
+
+    table.deliverables td.price {
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    table.deliverables tr.total-row td {
+      font-weight: bold;
+      background: #fff3cd;
+      border-color: #1a5276;
+      font-size: 11.5pt;
+    }
+
+    table.deliverables td.dur {
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    /* ─── TOTAL CALLOUT ──────────────────────────────────── */
+    .total-callout {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin: 14px 0 16px;
+      padding: 14px 22px;
+      border: 2px solid #1a5276;
+      border-left: 8px solid #1a5276;
+      background: #edf3fb;
+      color: #1a5276;
+      font-size: 13pt;
+      font-weight: bold;
+      letter-spacing: 0.3px;
+    }
+
+    .total-callout span:first-child {
+      text-transform: uppercase;
+    }
+
+    .total-callout span:last-child {
+      font-size: 16pt;
+      white-space: nowrap;
+    }
+
+    /* ─── PAYMENT TABLE ──────────────────────────────────── */
+    table.payment {
+      width: 60%;
+      margin: 8px 0 14px auto;
+      border-collapse: collapse;
+      font-size: 11pt;
+    }
+
+    table.payment td {
+      padding: 5px 10px;
+      border: 1px solid #aac;
+    }
+
+    table.payment tr:last-child td {
+      font-weight: bold;
+      background: #fff3cd;
+    }
+
+    table.payment td:last-child {
+      text-align: right;
+    }
+
+    /* ─── SIGNATURE ──────────────────────────────────────── */
+    .signature-section {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 28px;
+      font-size: 11pt;
+    }
+
+    .sig-block {
+      text-align: center;
+      width: 42%;
+    }
+
+    .sig-block .sig-line {
+      margin-top: 52px;
+      border-top: 1px solid #000;
+      padding-top: 4px;
+    }
+
+    .sig-block .sig-title {
+      font-size: 10pt;
+      color: #444;
+    }
+
+    /* ─── LOGO IMAGE (kop) ───────────────────────────────── */
+    .logo-img {
+      height: 86px;
+      width: auto;
+      flex-shrink: 0;
+    }
+
+    /* ─── DIGITAL SIGNATURE ──────────────────────────────── */
+    .sig-sign {
+      height: 52px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+    }
+
+    .sig-sign img {
+      height: 58px;
+      width: auto;
+      max-width: 220px;
+      object-fit: contain;
+    }
+
+    /* ─── FOOTER ─────────────────────────────────────────── */
+    .footer {
+      margin-top: 30px;
+      border-top: 2px solid #1a5276;
+      padding-top: 8px;
+      text-align: center;
+      font-size: 8.5pt;
+      color: #666;
+    }
+
+    /* ─── PRINT ──────────────────────────────────────────── */
+    @media print {
+      body { background: #fff; }
+      .page {
+        margin: 0;
+        padding: 15mm 20mm;
+        box-shadow: none;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- ══════════ KOP SURAT ══════════ -->
+  <div class="header">
+    <img class="logo-img" src="kebunkode.jpg" alt="Logo KebunKode" />
+    <div class="header-text">
+      <p>Jasa Teknologi Informasi &amp; Pengembangan Website Profesional</p>
+    </div>
+  </div>
+  <div class="sub-header">
+    Email: info@kebunkode.com &nbsp;|&nbsp; Telp: 0813 18 988 499 &nbsp;|&nbsp; Website: www.kebunkode.com<br/>
+    Alamat: Kebun Kembang Asri Blok C2/3a, Sarimulya Kotabaru Karawang – Jawa Barat
+  </div>
+
+  <!-- ══════════ META ══════════ -->
+  <table class="meta-table">
+    <tr><td>No. Surat</td><td>:</td><td>SP/KK/X/2026/001</td></tr>
+    <tr><td>Tanggal</td><td>:</td><td>9 Oktober 2026</td></tr>
+    <tr><td>Lampiran</td><td>:</td><td>1 (satu) berkas</td></tr>
+    <tr><td>Perihal</td><td>:</td><td><strong>Penawaran Jasa Pembuatan Website CMS (Company Profile)</strong></td></tr>
+  </table>
+
+  <!-- ══════════ TUJUAN ══════════ -->
+  <div class="to-block">
+    Kepada Yth.<br/>
+    <strong>Pimpinan PT. Magali Jaya Abadi</strong><br/>
+    Kp. Ciselang RT/RW. 002/004, Desa Karangjaya,<br/>
+    Kec. Tirtamulya, Kab. Karawang, Jawa Barat<br/>
+    di Tempat
+  </div>
+
+  <!-- ══════════ JUDUL ══════════ -->
+  <div class="letter-title">Surat Penawaran</div>
+
+  <!-- ══════════ ISI ══════════ -->
+  <div class="body">
+    <p>Dengan hormat,</p>
+
+    <p>
+      Sehubungan dengan kebutuhan perusahaan akan media promosi digital dan kemudahan pengelolaan
+      konten, kami dari <strong>KebunKode</strong> bermaksud mengajukan penawaran jasa
+      <strong>Pembuatan Website CMS (Company Profile)</strong> untuk <strong>PT. Magali Jaya Abadi</strong>.
+    </p>
+
+    <p>
+      Website ini tidak hanya berfungsi sebagai company profile yang menampilkan profil, layanan,
+      legalitas, mitra, dokumentasi, dan kontak perusahaan secara profesional, tetapi juga dilengkapi
+      dengan <em>Content Management System</em> (CMS) sehingga seluruh konten dapat diubah dan
+      diperbarui secara mandiri oleh tim PT. Magali Jaya Abadi tanpa memerlukan bantuan teknis.
+    </p>
+
+    <p>
+      Adapun fitur yang kami tawarkan beserta estimasi waktu pengerjaannya adalah sebagai berikut:
+    </p>
+
+    <!-- deliverables -->
+    <div class="deliverables-title">Daftar Fitur &amp; Estimasi Waktu Pengerjaan:</div>
+    <table class="deliverables">
+      <thead>
+        <tr>
+          <th style="width:5%">No.</th>
+          <th style="width:27%">Fitur / Item Pekerjaan</th>
+          <th style="width:50%">Keterangan</th>
+          <th style="width:18%">Estimasi Waktu</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align:center">1</td>
+          <td>Desain &amp; Pengembangan Halaman Publik (Landing Page)</td>
+          <td>React SPA responsif dengan 2 varian hero (slider), bagian Tentang Kami, Layanan, Visi &amp; Misi, Legalitas, Customer, Dokumentasi, FAQ, Testimoni, dan Kontak; tampilan modern sesuai identitas logo perusahaan.</td>
+          <td class="dur">7 hari</td>
+        </tr>
+        <tr>
+          <td style="text-align:center">2</td>
+          <td>Panel Admin (CMS)</td>
+          <td>Login aman, dashboard ringkasan konten, dan pengelolaan 13 modul konten (hero, fitur, layanan, mitra, galeri, legalitas, nilai, misi, FAQ, testimoni, kontak, tautan footer, pengaturan situs).</td>
+          <td class="dur">6 hari</td>
+        </tr>
+        <tr>
+          <td style="text-align:center">3</td>
+          <td>Backend API &amp; Database</td>
+          <td>Laravel + MySQL sebagai penyedia data (REST API) dengan autentikasi token (Sanctum) dan validasi data.</td>
+          <td class="dur">5 hari</td>
+        </tr>
+        <tr>
+          <td style="text-align:center">4</td>
+          <td>Manajemen Konten Dinamis</td>
+          <td>Seluruh teks, gambar, nomor kontak, dan pengaturan situs dapat diubah sendiri melalui panel tanpa coding.</td>
+          <td class="dur">3 hari</td>
+        </tr>
+        <tr>
+          <td style="text-align:center">5</td>
+          <td>Manajemen Galeri &amp; Upload Media</td>
+          <td>Kategori galeri, unggah foto dokumentasi terbaru, tampilan pratinjau (lightbox), dan pengaturan urutan.</td>
+          <td class="dur">2 hari</td>
+        </tr>
+        <tr>
+          <td style="text-align:center">6</td>
+          <td>Integrasi WhatsApp &amp; Formulir Konsultasi</td>
+          <td>Tombol dan formulir konsultasi yang terhubung langsung ke WhatsApp resmi perusahaan.</td>
+          <td class="dur">2 hari</td>
+        </tr>
+        <tr>
+          <td style="text-align:center">7</td>
+          <td>SEO Dasar &amp; Meta Situs</td>
+          <td>Pengaturan judul, deskripsi, favicon, dan struktur heading untuk optimalisasi mesin pencari.</td>
+          <td class="dur">1 hari</td>
+        </tr>
+        <tr>
+          <td style="text-align:center">8</td>
+          <td>Optimasi Responsif &amp; Kecepatan</td>
+          <td>Tampilan optimal di ponsel, tablet, dan desktop serta kompresi aset gambar.</td>
+          <td class="dur">2 hari</td>
+        </tr>
+        <tr>
+          <td style="text-align:center">9</td>
+          <td>Deploy, Hosting &amp; Domain</td>
+          <td>Setup server, konfigurasi hosting, registrasi domain, SSL certificate, dan backup otomatis (masa aktif 1 tahun).</td>
+          <td class="dur">1 hari</td>
+        </tr>
+        <tr>
+          <td style="text-align:center">10</td>
+          <td>Training &amp; Dokumentasi</td>
+          <td>Pelatihan penggunaan panel admin serta panduan teknis pengelolaan konten.</td>
+          <td class="dur">1 hari</td>
+        </tr>
+        <tr class="total-row">
+          <td colspan="3" style="text-align:right">TOTAL ESTIMASI PENGERJAAN</td>
+          <td class="dur">30 hari kerja</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="total-callout">
+      <span>Total Penawaran</span>
+      <span>Rp 8.755.000</span>
+    </div>
+
+    <p>
+      Nilai penawaran yang kami ajukan adalah <strong>Rp 8.755.000</strong> (tiga belas juta empat
+      ratus ribu rupiah) untuk keseluruhan fitur di atas, dan belum termasuk PPN apabila dipungut.
+      Sistem pembayaran dilakukan dengan skema <strong>uang muka (DP) 50%</strong> pada saat
+      kesepakatan kerja sama dan <strong>pelunasan 50%</strong> pada saat serah terima proyek,
+      dengan rincian sebagai berikut:
+    </p>
+
+    <table class="payment">
+      <tr>
+        <td>Uang Muka (DP 50%)</td>
+        <td>Rp 4.377.500</td>
+      </tr>
+      <tr>
+        <td>Pelunasan (50%) saat serah terima</td>
+        <td>Rp 4.377.500</td>
+      </tr>
+    </table>
+
+    <!-- syarat & ketentuan -->
+    <div class="deliverables-title" style="margin-top:14px;">Syarat &amp; Ketentuan:</div>
+    <table class="deliverables" style="margin-bottom:14px;">
+      <thead>
+        <tr>
+          <th style="width:5%">No.</th>
+          <th style="width:30%">Ketentuan</th>
+          <th>Keterangan</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align:center">1</td>
+          <td>Masa Berlaku Penawaran</td>
+          <td>Penawaran ini berlaku selama <strong>14 (empat belas) hari kalender</strong> sejak tanggal surat ini diterbitkan.</td>
+        </tr>
+        <tr>
+          <td style="text-align:center">2</td>
+          <td>Waktu Pengerjaan</td>
+          <td><strong>30 (tiga puluh) hari kerja</strong> terhitung sejak uang muka diterima dan materi konten (teks, foto, logo) diserahkan lengkap oleh pihak perusahaan.</td>
+        </tr>
+        <tr>
+          <td style="text-align:center">3</td>
+          <td>Revisi</td>
+          <td>Termasuk <strong>2 (dua) kali revisi</strong> desain. Revisi tambahan atau perubahan besar dikenakan biaya tersendiri.</td>
+        </tr>
+        <tr>
+          <td style="text-align:center">4</td>
+          <td>Garansi Perbaikan Bug</td>
+          <td>Garansi perbaikan bug/kesalahan sistem selama <strong>3 (tiga) bulan</strong> sejak serah terima, tanpa biaya tambahan.</td>
+        </tr>
+        <tr>
+          <td style="text-align:center">5</td>
+          <td>Free Maintenance</td>
+          <td>Pemeliharaan gratis 3 (tiga) bulan: pemantauan performa, perbaikan error/bug, dan pembaruan keamanan dasar.</td>
+        </tr>
+        <tr>
+          <td style="text-align:center">6</td>
+          <td>Kepemilikan &amp; Serah Terima</td>
+          <td>Source code, database, dan seluruh akses diserahkan kepada PT. Magali Jaya Abadi setelah pelunasan pembayaran.</td>
+        </tr>
+        <tr>
+          <td style="text-align:center">7</td>
+          <td>Di Luar Cakupan</td>
+          <td>Penambahan fitur/modul baru di luar daftar di atas akan dibuatkan penawaran terpisah.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      Kami yakin website CMS ini akan membantu PT. Magali Jaya Abadi dalam memperkuat citra
+      perusahaan, memperluas jangkauan pemasaran, serta mempermudah pengelolaan informasi kepada
+      mitra dan calon pelanggan. Kami siap berdiskusi lebih lanjut untuk menyesuaikan penawaran ini
+      dengan kebutuhan perusahaan.
+    </p>
+
+    <p>
+      Demikian surat penawaran ini kami sampaikan. Besar harapan kami dapat bekerja sama dengan
+      PT. Magali Jaya Abadi. Atas perhatian dan kepercayaan Bapak/Ibu, kami ucapkan terima kasih.
+    </p>
+  </div>
+
+  <!-- ══════════ TANDA TANGAN ══════════ -->
+  <div class="signature-section">
+    <!-- pihak pertama -->
+    <div class="sig-block">
+      <div>Hormat kami,</div>
+      <div>KebunKode</div>
+      <div class="sig-sign">
+        <!-- <img src="assets/tanda-tangan-anas.png" alt="Tanda tangan Anas Fajar Pratama" /> -->
+      </div>
+      <div class="sig-line" style="margin-top:0">
+        <strong>Anas Fajar Pratama</strong><br/>
+        <span class="sig-title">Pimpinan</span>
+      </div>
+    </div>
+
+    <!-- pihak kedua -->
+    <div class="sig-block">
+      <div>Diterima oleh,</div>
+      <div>PT. Magali Jaya Abadi</div>
+      <div class="sig-line">
+        <strong>Deni Bahtiar Nurjaya</strong><br/>
+        <span class="sig-title">Pimpinan / Perwakilan</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <div class="footer">
+    KebunKode — Jasa Teknologi Informasi &amp; Pengembangan Website &nbsp;|&nbsp;
+    www.kebunkode.com &nbsp;|&nbsp; info@kebunkode.com &nbsp;|&nbsp; 0813 18 988 499
+  </div>
+
+</div>
+</body>
+</html>
